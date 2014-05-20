@@ -39,7 +39,7 @@ var Space = {
 		
 		// Create the hull display
 		var h = $('<div>').attr('id', 'hullRemaining').appendTo(this.panel);
-		$('<div>').addClass('row_key').text('外壳: ').appendTo(h);
+		$('<div>').addClass('row_key').text('外殼: ').appendTo(h);
 		$('<div>').addClass('row_val').appendTo(h);
 		
 		//subscribe to stateUpdates
@@ -418,14 +418,14 @@ var Space = {
 			                		.appendTo('body');
 				                $('<span>')
 				                	.addClass('endGame')
-			                		.text('本局游戏积分: ' + Score.calculateScore())
+			                		.text('本局遊戲積分: ' + Score.calculateScore())
 			                		.appendTo('.centerCont')
 			                		.animate({opacity:1},1500);
 				                $('<br />')
 				                	.appendTo('.centerCont');
 				                $('<span>')
 				                	.addClass('endGame')
-			                		.text('总计游戏积分: ' + Prestige.get().score)
+			                		.text('總計遊戲積分: ' + Prestige.get().score)
 			                		.appendTo('.centerCont')
 			                		.animate({opacity:1},1500);
 				                $('<br />')
@@ -436,7 +436,7 @@ var Space = {
 					    		$('#content, #notifications').remove();
 					    		$('<span>')
 				                	.addClass('endGame endGameRestart')
-				                	.text('重新开始游戏')
+				                	.text('重新開始遊戲')
 				                	.click(Engine.confirmDelete)
 				                	.appendTo('.centerCont')
 				                	.animate({opacity:1},1500);

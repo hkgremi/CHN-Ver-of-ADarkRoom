@@ -173,7 +173,7 @@ var Room = {
 				};
 			}
 		},
-		'水桶'': {
+		'水桶: {
 			button: null,
 			type: 'upgrade',
 			maximum: 1,

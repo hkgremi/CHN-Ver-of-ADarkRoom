@@ -22,7 +22,7 @@ div#population {
 div#village:before {
 	position: absolute;
 	background: white;
-	content: "村庄";
+	content: "村莊";
 	left: 8px;
 	top: -13px;
 }

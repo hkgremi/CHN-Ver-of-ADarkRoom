@@ -13,21 +13,21 @@ var Outside = {
 			//tim test should be 10 1
 			delay: 10,
 			stores: {
-				'木头': 1
+				'木頭': 1
 			}
 		},
-		'捕猎手': {
+		'捕獵手': {
 			delay: 10,
 			stores: {
 				'毛皮': 0.5,
 				'肉': 0.5
 			}
 		},
-		'兽夹制作者': {
+		'獸夾製作者': {
 			delay: 10,
 			stores: {
 				'肉': -1,
-				'诱饵': 1
+				'誘餌': 1
 			}
 		},
 		'制革工': {
@@ -37,49 +37,49 @@ var Outside = {
 				'皮革': 1
 			}
 		},
-		'腌肉者': {
+		'醃肉者': {
 			delay: 10,
 			stores: {
 				'肉': -5,
-				'木头': -5,
-				'腌肉': 1
+				'木頭': -5,
+				'醃肉': 1
 			}
 		},
-		'铁矿工': {
+		'鐵礦工': {
 			delay: 10,
 			stores: {
-				'腌肉': -1,
-				'铁': 1
+				'醃肉': -1,
+				'鐵': 1
 			}
 		},
-		'煤矿工': {
+		'煤礦工': {
 			delay: 10,
 			stores: {
-				'腌肉': -1,
+				'醃肉': -1,
 				'煤': 1
 			}
 		},
-		'硫磺矿工': {
+		'硫磺礦工': {
 			delay: 10,
 			stores: {
-				'腌肉': -1,
+				'醃肉': -1,
 				'硫磺': 1
 			}
 		},
-		'熔炼工': {
+		'熔煉工': {
 			delay: 10,
 			stores: {
-				'铁': -1,
+				'鐵': -1,
 				'煤': -1,
-				'钢': 1
+				'鋼': 1
 			}
 		},
-		'军械师': {
+		'軍械師': {
 			delay: 10,
 			stores: {
-				'钢': -1,
+				'鋼': -1,
 				'硫磺': -1,
-				'子弹': 1
+				'子彈': 1
 			}
 		}
 	},
@@ -97,23 +97,23 @@ var Outside = {
 		},
 		{
 			rollUnder: 0.85,
-			name: '鳞片',
-			message: '奇怪的鳞片'
+			name: '鱗片',
+			message: '奇怪的鱗片'
 		},
 		{
 			rollUnder: 0.93,
-			name: '牙齿',
-			message: '残缺的牙齿'
+			name: '牙齒',
+			message: '殘缺的牙齒'
 		},
 		{
 			rollUnder: 0.995,
 			name: '布匹',
-			message: '破烂的布料'
+			message: '破爛的布料'
 		},
 		{
 			rollUnder: 1.0,
-			name: '护身符',
-			message: '一个粗糙的护身符'
+			name: '護身符',
+			message: '一個粗糙的護身符'
 		}
 	],
 	
@@ -154,7 +154,7 @@ var Outside = {
 		// Create the gather button
 		new Button.Button({
 			id: 'gatherButton',
-			text: "收集木头",
+			text: "收集木頭",
 			click: Outside.gatherWood,
 			cooldown: Outside._GATHER_DELAY,
 			width: '80px'
@@ -171,15 +171,15 @@ var Outside = {
 			var num = Math.floor(Math.random()*(space/2) + space/2);
 			if(num == 0) num = 1;
 			if(num == 1) {
-				Notifications.notify(null, '一个生人在夜晚到来.');
+				Notifications.notify(null, '一個生人在夜晚到來');
 			} else if(num < 5) {
-				Notifications.notify(null, '一个长途跋涉的家庭搬入了一个木屋.');
+				Notifications.notify(null, '一個長途跋涉的家庭搬入了一個木屋');
 			} else if(num < 10) {
-				Notifications.notify(null, '一小群人抵达了, 个个瘦骨嶙峋.');
+				Notifications.notify(null, '一小群人抵達了，個個瘦骨嶙峋');
 			} else if(num < 30) {
-				Notifications.notify(null, '一大队人群抵达, 带来了磨难与希望.');
+				Notifications.notify(null, '一大隊人群抵達，帶來了磨難與希望');
 			} else {
-				Notifications.notify(null, "小村已成为小镇, 热闹非凡, 言语无法形容.");
+				Notifications.notify(null, "小村已成為小鎮，熱鬧非凡，言語無法形容");
 			}
 			Engine.log('population increased by ' + num);
 			$SM.add('game.population', num);
@@ -391,11 +391,11 @@ var Outside = {
 		for(var k in $SM.get('game.buildings')) {
 			if(k == '陷阱') {
 				var numTraps = $SM.get('game.buildings["'+k+'"]');
-				var numBait = $SM.get('stores["诱饵"]', true);
+				var numBait = $SM.get('stores["誘餌"]', true);
 				var traps = numTraps - numBait;
 				traps = traps < 0 ? 0 : traps;
 				Outside.updateVillageRow(k, traps, village);
-				Outside.updateVillageRow('上饵陷阱', numBait > numTraps ? numTraps : numBait, village);
+				Outside.updateVillageRow('上餌陷阱', numBait > numTraps ? numTraps : numBait, village);
 			} else {
 				if(Outside.checkWorker(k)) {
 					Outside.updateWorkersView();
@@ -433,14 +433,14 @@ var Outside = {
 	
 	checkWorker: function(name) {
 		var jobMap = {
-			'猎人小屋': ['捕猎手', '兽夹制作者'],
+			'獵人小屋': ['捕獵手', '獸夾製作者'],
 			'制革坊': ['制革工'],
-			'腌肉坊': ['腌肉者'],
-			'铁矿': ['铁矿工'],
-			'煤矿': ['煤矿工'],
-			'硫磺矿': ['硫磺矿工'],
-			'炼钢炉': ['熔炼工'],
-			'军械库' : ['军械师']
+			'醃肉坊': ['醃肉者'],
+			'鐵礦': ['鐵礦工'],
+			'煤礦': ['煤礦工'],
+			'硫磺礦': ['硫磺礦工'],
+			'煉鋼爐': ['熔煉工'],
+			'軍械庫' : ['軍械師']
 		};
 		
 		var jobs = jobMap[name];
@@ -496,7 +496,7 @@ var Outside = {
 			if(btn.length == 0) {
 				new Button.Button({
 					id: 'trapsButton',
-					text: "检查陷阱",
+					text: "檢查陷阱",
 					click: Outside.checkTraps,
 					cooldown: Outside._TRAPS_DELAY,
 					width: '80px'
@@ -515,17 +515,17 @@ var Outside = {
 		var numHuts = $SM.get('game.buildings["木屋"]', true);
 		var title;
 		if(numHuts == 0) {
-			title = "静谧森林";
+			title = "靜謐森林";
 		} else if(numHuts == 1) {
-			title = "孤单的木屋";
+			title = "孤單的木屋";
 		} else if(numHuts <= 4) {
-			title = "小型村庄";
+			title = "小型村莊";
 		} else if(numHuts <= 8) {
-			title = "标准村庄";
+			title = "標準村莊";
 		} else if(numHuts <= 14) {
-			title = "大型村庄";
+			title = "大型村莊";
 		} else {
-			title = "喧嚣热闹的小镇";
+			title = "喧囂熱鬧的小鎮";
 		}
 		
 		if(Engine.activeModule == this) {
@@ -537,7 +537,7 @@ var Outside = {
 	onArrival: function(transition_diff) {
 		Outside.setTitle();
 		if(!$SM.get('game.outside.seenForest')) {
-			Notifications.notify(Outside, "天空阴沉, 朔风野大");
+			Notifications.notify(Outside, "天空陰沉，朔風野大");
 			$SM.set('game.outside.seenForest', true);
 		}
 		Outside.updateTrapButton();
@@ -547,16 +547,16 @@ var Outside = {
 	},
 	
 	gatherWood: function() {
-		Notifications.notify(Outside, "干枯的灌木和树枝把树林的地面弄得一团糟");
+		Notifications.notify(Outside, "乾枯的灌木和樹枝把樹林的地面弄得一團糟");
 		var gatherAmt = $SM.get('game.buildings["筐子"]', true) > 0 ? 50 : 10;
-		$SM.add('stores["木头"]', gatherAmt);
+		$SM.add('stores["木頭"]', gatherAmt);
 	},
 	
 	checkTraps: function() {
 		var drops = {};
 		var msg = [];
 		var numTraps = $SM.get('game.buildings["陷阱"]', true);
-		var numBait = $SM.get('stores["诱饵"]', true);
+		var numBait = $SM.get('stores["誘餌"]', true);
 		var numDrops = numTraps + (numBait < numTraps ? numBait : numTraps);
 		for(var i = 0; i < numDrops; i++) {
 			var roll = Math.random();
@@ -573,7 +573,7 @@ var Outside = {
 				}
 			}
 		}
-		var s = '陷阱可能会带来 ';
+		var s = '陷阱可能會帶來 ';
 		for(var i = 0, len = msg.length; i < len; i++) {
 			if(len > 1 && i > 0 && i < len - 1) {
 				s += ", ";
@@ -584,7 +584,7 @@ var Outside = {
 		}
 		
 		var baitUsed = numBait < numTraps ? numBait : numTraps;
-		drops['诱饵'] = -baitUsed;
+		drops['誘餌'] = -baitUsed;
 		
 		Notifications.notify(Outside, s);
 		$SM.addM('stores', drops);

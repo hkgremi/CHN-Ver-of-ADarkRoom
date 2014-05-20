@@ -104,11 +104,11 @@ var Events = {
 		}
 		if(numWeapons == 0) {
 			// No weapons? You can punch stuff!
-			Events.createAttackButton('拳击').prependTo(btns);
+			Events.createAttackButton('拳擊').prependTo(btns);
 		}
 		
 		Events.createEatMeatButton().appendTo(btns);
-		if((Path.outfit['医疗药剂'] || 0) != 0) {
+		if((Path.outfit['醫療藥劑'] || 0) != 0) {
 		  Events.createUseMedsButton().appendTo(btns);
 	  }
 		
@@ -123,13 +123,13 @@ var Events = {
 		
 		var btn = new Button.Button({
 			id: 'eat',
-			text: '吃腌肉',
+			text: '吃醃肉',
 			cooldown: cooldown,
 			click: Events.eatMeat,
-			cost: { '腌肉': 1 }
+			cost: { '醃肉': 1 }
 		});
 		
-		if(Path.outfit['腌肉'] == 0) {
+		if(Path.outfit['醃肉'] == 0) {
 			Button.setDisabled(btn, true);
 		}
 		
@@ -143,13 +143,13 @@ var Events = {
 		
 		var btn = new Button.Button({
 			id: 'meds',
-			text: '使用药剂',
+			text: '使用藥劑',
 			cooldown: cooldown,
 			click: Events.useMeds,
-			cost: { '医疗药剂': 1 }
+			cost: { '醫療藥劑': 1 }
 		});
 		
-		if((Path.outfit['医疗药剂'] || 0) == 0) {
+		if((Path.outfit['醫療藥劑'] || 0) == 0) {
 			Button.setDisabled(btn, true);
 		}
 		
@@ -160,7 +160,7 @@ var Events = {
 		var weapon = World.Weapons[weaponName];
 		var cd = weapon.cooldown;
 		if(weapon.type == 'unarmed') {
-			if($SM.hasPerk('降龙十八掌')) {
+			if($SM.hasPerk('降龍十八掌')) {
 				cd /= 2;
 			}
 		}
@@ -198,10 +198,10 @@ var Events = {
 	},
 	
 	eatMeat: function() {
-		if(Path.outfit['腌肉'] > 0) {
-			Path.outfit['腌肉']--;
+		if(Path.outfit['醃肉'] > 0) {
+			Path.outfit['醃肉']--;
 			World.updateSupplies();
-			if(Path.outfit['腌肉'] == 0) {
+			if(Path.outfit['醃肉'] == 0) {
 				Button.setDisabled($('#eat'), true);
 			}
 			
@@ -220,10 +220,10 @@ var Events = {
 	},
 	
 	useMeds: function() {
-		if(Path.outfit['医疗药剂'] > 0) {
-			Path.outfit['医疗药剂']--;
+		if(Path.outfit['醫療藥劑'] > 0) {
+			Path.outfit['醫療藥劑']--;
 			World.updateSupplies();
-			if(Path.outfit['医疗药剂'] == 0) {
+			if(Path.outfit['醫療藥劑'] == 0) {
 				Button.setDisabled($('#meds'), true);
 			}
 			
@@ -250,10 +250,10 @@ var Events = {
 				$SM.add('character.punches', 1);
 				if($SM.get('character.punches') == 50 && !$SM.hasPerk('通臂拳')) {
 					$SM.addPerk('通臂拳');
-				} else if($SM.get('character.punches') == 150 && !$SM.hasPerk('金刚掌')) {
-					$SM.addPerk('金刚掌');
-				} else if($SM.get('character.punches') == 300 && !$SM.hasPerk('降龙十八掌')) {
-					$SM.addPerk('降龙十八掌');
+				} else if($SM.get('character.punches') == 150 && !$SM.hasPerk('金剛掌')) {
+					$SM.addPerk('金剛掌');
+				} else if($SM.get('character.punches') == 300 && !$SM.hasPerk('降龍十八掌')) {
+					$SM.addPerk('降龍十八掌');
 				}
 				
 			}
@@ -285,7 +285,7 @@ var Events = {
 						// enable or create the punch button
 						var fists = $('#attack_fists');
 						if(fists.length == 0) {
-							Events.createAttackButton('拳击').prependTo('#buttons', Events.eventPanel());
+							Events.createAttackButton('拳擊').prependTo('#buttons', Events.eventPanel());
 						} else {
 							Button.setDisabled(fists, false);
 						}
@@ -300,13 +300,13 @@ var Events = {
 					if(weapon.type == 'unarmed' && $SM.hasPerk('通臂拳')) {
 						dmg *= 2;
 					}
-					if(weapon.type == 'unarmed' && $SM.hasPerk('金刚掌')) {
+					if(weapon.type == 'unarmed' && $SM.hasPerk('金剛掌')) {
 						dmg *= 3;
 					}
-					if(weapon.type == 'unarmed' && $SM.hasPerk('降龙十八掌')) {
+					if(weapon.type == 'unarmed' && $SM.hasPerk('降龍十八掌')) {
 						dmg *= 2;
 					}
-					if(weapon.type == 'melee' && $SM.hasPerk('夺命连环三仙剑')) {
+					if(weapon.type == 'melee' && $SM.hasPerk('奪命連環三仙劍')) {
 						dmg = Math.floor(dmg * 1.5);
 					}
 				}
@@ -453,7 +453,7 @@ var Events = {
 					var btns = $('#buttons', Events.eventPanel());
 					desc.empty();
 					btns.empty();
-					$('<div>').text(' ' + scene.enemy + (scene.plural ? ' ' : ' ') + ' 死了.').appendTo(desc);
+					$('<div>').text(' ' + scene.enemy + (scene.plural ? ' ' : ' ') + ' 死了').appendTo(desc);
 					
 					Events.drawLoot(scene.loot);
 					
@@ -471,11 +471,11 @@ var Events = {
 									Events.endEvent(); 
 								}
 							},
-							text: '离开'
+							text: '離開'
 						}).appendTo(btns);
 						
 						Events.createEatMeatButton(0).appendTo(btns);
-						if((Path.outfit['医疗药剂'] || 0) != 0) {
+						if((Path.outfit['醫療藥劑'] || 0) != 0) {
 						  Events.createUseMedsButton(0).appendTo(btns);
 					  }
 					}

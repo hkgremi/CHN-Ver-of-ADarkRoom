@@ -17,48 +17,48 @@
 		
 	Perks: {
 		'通臂拳': {
-			desc: '提高徒手攻击力',
+			desc: '提高徒手攻擊力',
 			notify: '通臂拳'
 		},
-		'金刚掌': {
-			desc: '再次提高徒手攻击力.',
-			notify: '金刚掌'
+		'金剛掌': {
+			desc: '再次提高徒手攻擊力',
+			notify: '金剛掌'
 		},
-		'降龙十八掌': {
-			desc: '两倍攻速+更高攻击力',
-			notify: '降龙十八掌'
+		'降龍十八掌': {
+			desc: '兩倍攻速+更高攻擊力',
+			notify: '降龍十八掌'
 		},
-		'夺命连环三仙剑': {
-			desc: '近战武器攻击提高',
-			notify: '夺命连环三仙剑'
+		'奪命連環三仙劍': {
+			desc: '近戰武器攻擊提高',
+			notify: '奪命連環三仙劍'
 		},
-		'避免饥饿': {
-			desc: '两倍挨饿能力',
-			notify: '学习如何避免饥饿'
+		'避免飢餓': {
+			desc: '兩倍挨餓能力',
+			notify: '學習如何避免飢餓'
 		},
 		'避免流失水分': {
-			desc: '两倍忍渴能力',
-			notify: '学习如何避免流失水分'
+			desc: '兩倍忍渴能力',
+			notify: '學習如何避免流失水分'
 		},
 		'凌波微步': {
-			desc: '躲闪能力加强',
+			desc: '躲閃能力加強',
 			notify: "凌波微步"
 		},
-		'兰花佛穴手': {
-			desc: '命中率加强',
-			notify: '兰花佛穴手'
+		'蘭花佛穴手': {
+			desc: '命中率加強',
+			notify: '蘭花佛穴手'
 		},
 		'千里眼': {
-			desc: '视野扩大',
+			desc: '視野擴大',
 			notify: '千里眼'
 		},
-		'潜行术': {
-			desc: '降低遇敌概率',
-			notify: '潜行术'
+		'潛行術': {
+			desc: '降低遇敵概率',
+			notify: '潛行術'
 		},
-		'九阳神功': {
-			desc: '进食恢复hp加强',
-			notify: '九阳神功'
+		'九陽神功': {
+			desc: '進食恢復hp加強',
+			notify: '九陽神功'
 		}
 	},
 	
@@ -100,13 +100,13 @@
 
 		 $('<span>')
 			.addClass('lightsOff menuBtn')
-			.text('关灯.')
+			.text('關燈')
 			.click(Engine.turnLightsOff)
 			.appendTo(menu);
 		
 		$('<span>')
 			.addClass('menuBtn')
-			.text('重新来过.')
+			.text('重新來過')
 			.click(Engine.confirmDelete)
 			.appendTo(menu);
 		
@@ -118,13 +118,13 @@
       
 		$('<span>')
 			.addClass('menuBtn')
-			.text('存档.')
+			.text('存檔')
 			.click(Engine.exportImport)
 			.appendTo(menu);
 			
 
 
-		$('<span><img src="微博1.png"> </span>')
+		/* $('<span><img src="微博1.png"> </span>')
 			.addClass('menuBtn')
 			.attr('id','sss1')
 			//.attr('src','微博1.png')
@@ -159,7 +159,7 @@
 			.addClass('menuBtn')
 			//.text('u77.')u77logo.png
 			.click(function() { window.open('http://www.u77.com'); })
-			.appendTo(menu);
+			.appendTo(menu); */
 
 		
 		// Register keypress handlers
@@ -181,10 +181,10 @@
 		Events.init();
 		Room.init();
 		
-		if($SM.get('stores["木头"]')) {
+		if($SM.get('stores["木頭"]')) {
 			Outside.init();
 		}
-		if($SM.get('stores["罗盘"]', true) > 0) {
+		if($SM.get('stores["指南針"]', true) > 0) {
 			Path.init();
 		}
 		if($SM.get('features.location.spaceShip')) {
@@ -236,18 +236,18 @@
 	
   exportImport: function() {
     Events.startEvent({
-			title: '导出 / 导入',
+			title: '導出 / 導入',
 			scenes: {
 				start: {
-					text: ['导入导出游戏, 备份游戏',
-					       '或者从其他地方导入'],
+					text: ['導入導出遊戲, 備份遊戲',
+					       '或者從其他地方導入'],
 					buttons: {
 						'export': {
-							text: '导出',
+							text: '導出',
 							onChoose: Engine.export64
 						},
 						'import': {
-							text: '导入',
+							text: '導入',
 							nextScene: {1: 'confirm'},
 						},
 						'cancel': {
@@ -257,9 +257,9 @@
 					}
 				},
 				'confirm': {
-					text: ['确定么?',
-					       '如果导入存档非法, 存档将丢失.',
-					       '本过程不可逆.'],
+					text: ['確定麼?',
+					       '如果導入存檔非法，存檔將丟失',
+					       '本過程不可逆'],
 					buttons: {
 						'yes': {
 							text: '是',
@@ -286,7 +286,7 @@
     	title: 'Export',
     	scenes: {
     		start: {
-    			text: ['导出存档.'],
+    			text: ['導出存檔'],
     			textarea: string64,
     			buttons: {
     				'done': {
@@ -317,10 +317,10 @@
 	
 	confirmDelete: function() {
 		Events.startEvent({
-			title: '消除存档?',
+			title: '消除存檔?',
 			scenes: {
 				start: {
-					text: ['彻底重新开始新游戏?'],
+					text: ['徹底重新開始新遊戲?'],
 					buttons: {
 						'yes': {
 							text: '是',
@@ -419,16 +419,16 @@
  	    if (darkCss == null) {
  	      	$('head').append('<link rel="stylesheet" href="css/dark.css" type="text/css" title="darkenLights" />');
  	      	Engine.turnLightsOff;
- 	      	$('.lightsOff').text('开灯.');
+ 	      	$('.lightsOff').text('開燈');
  	    }
  	  	else if (darkCss.disabled) {
  	    	darkCss.disabled = false;
- 	    	$('.lightsOff').text('开灯.');
+ 	    	$('.lightsOff').text('開燈');
  	  	}
  	   	else {
  	     	$("#darkenLights").attr("disabled", "disabled");
  	     	darkCss.disabled = true;
- 	     	$('.lightsOff').text('关灯.');
+ 	     	$('.lightsOff').text('關燈');
  	   	}
  	},
 	
@@ -454,7 +454,7 @@
 			var diff = Math.abs(panelIndex - currentIndex);
 			slider.animate({left: -(panelIndex * 700) + 'px'}, 300 * diff);
 
-			if($SM.get('stores["木头"]') != undefined) {
+			if($SM.get('stores["木頭"]') != undefined) {
 			// FIXME Why does this work if there's an animation queue...?
 				stores.animate({right: -(panelIndex * 700) + 'px'}, 300 * diff);
 			}

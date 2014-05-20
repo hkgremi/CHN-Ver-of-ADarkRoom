@@ -10,26 +10,26 @@ Events.Global = [
 		scenes: {
 			'start': {
 				text: [
-					'村名们从储藏室拖出了一个肮脏的家伙.',
-					"他的家人偷走了一些物资.",
-					'他应该被绞死以示惩罚.'
+					'村名們從儲藏室拖出了一個骯髒的傢伙',
+					"他的家人偷走了一些物資",
+					'他應該被絞死以示懲罰'
 				],
-				notification: '一个小偷被抓住了',
+				notification: '一個小偷被抓住了',
 				buttons: {
 					'kill': {
 						text: '吊死他',
 						nextScene: {1: 'hang'}
 					},
 					'spare': {
-						text: '释放他',
+						text: '釋放他',
 						nextScene: {1: 'spare'}
 					}
 				}
 			},
 			'hang': {
 				text: [
-			       '村名们把小偷吊死在了储藏室前面.',
-			       '在强大的压力下, 丢失的物资很快就被退回来了.'
+			       '村名們把小偷吊死在了儲藏室前面',
+			       '在強大的壓力下，丟失的物資很快就被退回來了'
 		        ],
 		        onLoad: function() {
 		        	$SM.set('game["小偷"]', 2);
@@ -38,24 +38,24 @@ Events.Global = [
 		        },
 		        buttons: {
 					'leave': {
-						text: '离开',
+						text: '離開',
 						nextScene: 'end'
 					}
 				}
 			},
 			'spare': {
 				text: [
-			       "小偷感谢不杀之恩, 他说再也不偷了.",
-			       "他在离开之前把他的那些偷偷摸摸的技巧分享给了大家."
+			       "小偷感謝不殺之恩，他說再也不偷了",
+			       "他在離開之前把他的那些偷偷摸摸的技巧分享給了大家"
 		        ],
 		        onLoad: function() {
 		        	$SM.set('game["小偷"]', 2);
 		        	$SM.remove('income["小偷"]');
-		        	$SM.addPerk('潜行术');
+		        	$SM.addPerk('潛行術');
 		        },
 		        buttons: {
 		        	'leave': {
-		        		text: '离开',
+		        		text: '離開',
 		        		nextScene: 'end'
 		        	}
 		        }

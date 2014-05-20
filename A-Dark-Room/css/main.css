@@ -1,4 +1,4 @@
-﻿/* Fonts */
+# H/* Fonts */
 body, .tooltip {
 	font-family: "Times New Roman", Times, serif;
 	font-size: 16px;
@@ -492,7 +492,7 @@ body.noMask #description {
 }
 
 #lootButtons:before {
-	content: "获取:";
+	content: "獲取:";
 	position: absolute;
 	top: -25px;
 	left: 0px;
@@ -510,7 +510,7 @@ body.noMask #description {
 }
 
 #dropMenu:before {
-	content: "drop:";
+	content: "丟棄:";
 	border-bottom: 1px solid black;
 	display: block;
 	margin-bottom: 5px;

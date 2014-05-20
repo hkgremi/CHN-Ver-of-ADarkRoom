@@ -8,7 +8,7 @@
 
 div#outfitting:before {
 	position: absolute;
-	content: "补给装备";
+	content: "補給裝備";
 	top: -13px;
 	background-color: white;
 }

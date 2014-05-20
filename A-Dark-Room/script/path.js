@@ -4,14 +4,14 @@ var Path = {
 	
 	// Everything not in this list weighs 1
 	Weight: {
-		'骨枪': 2,
-		'铁剑': 3,
-		'钢剑': 5,
-		'步枪': 5,
-		'子弹': 0.1,
-		'燃料电池': 0.2,
-		'镭射枪': 5,
-		'链球': 0.5
+		'骨槍': 2,
+		'鐵劍': 3,
+		'鋼劍': 5,
+		'步槍': 5,
+		'子彈': 0.1,
+		'燃料電池': 0.2,
+		'鐳射槍': 5,
+		'鏈球': 0.5
 	},
 		
 	name: 'Path',
@@ -26,7 +26,7 @@ var Path = {
 		World.init();
 		
 		// Create the path tab
-		this.tab = Header.addLocation("探索者尘路", "path", Path);
+		this.tab = Header.addLocation("探索者塵路", "path", Path);
 		
 		// Create the Path panel
 		this.panel = $('<div>').attr('id', "pathPanel")
@@ -40,7 +40,7 @@ var Path = {
 		// Add the embark button
 		new Button.Button({
 			id: 'embarkButton',
-			text: "出发",
+			text: "出發",
 			click: Path.embark,
 			width: '80px',
 			cooldown: World.DEATH_COOLDOWN
@@ -57,7 +57,7 @@ var Path = {
 	openPath: function() {
 		Path.init();
 		Engine.event('progress', 'path');
-		Notifications.notify(Room, '罗盘指向 ' + World.dir);
+		Notifications.notify(Room, '指南針指向 ' + World.dir);
 	},
 	
 	getWeight: function(thing) {
@@ -68,9 +68,9 @@ var Path = {
 	},
 	
 	getCapacity: function() {
-		if($SM.get('stores["大货车"]', true) > 0) {		//same  
+		if($SM.get('stores["大貨車"]', true) > 0) {		//same  
 			return Path.DEFAULT_BAG_SPACE + 60;   //tim test, should be 60
-		} else if($SM.get('stores["货车"]', true) > 0) { 			//same
+		} else if($SM.get('stores["貨車"]', true) > 0) { 			//same
 			return Path.DEFAULT_BAG_SPACE + 30;
 		} else if($SM.get('stores["旅行包"]', true) > 0) {  //tim mark, in case of bug stores.rucksack
 			return Path.DEFAULT_BAG_SPACE + 10;
@@ -130,16 +130,16 @@ var Path = {
 		
 		// Add the armour row
 		var armour = "none";
-		if($SM.get('stores["钢甲"]', true) > 0)
-			armour = "钢甲";
-		else if($SM.get('stores["铁甲"]', true) > 0)
-			armour = "铁甲";
+		if($SM.get('stores["鋼甲"]', true) > 0)
+			armour = "鋼甲";
+		else if($SM.get('stores["鐵甲"]', true) > 0)
+			armour = "鐵甲";
 		else if($SM.get('stores["皮甲"]', true) > 0)
 			armour = "皮甲";
 		var aRow = $('#armourRow');
 		if(aRow.length == 0) {
 			aRow = $('<div>').attr('id', 'armourRow').addClass('outfitRow').prependTo(outfit);
-			$('<div>').addClass('row_key').text('防护装甲').appendTo(aRow);
+			$('<div>').addClass('row_key').text('防護裝甲').appendTo(aRow);
 			$('<div>').addClass('row_val').text(armour).appendTo(aRow);
 			$('<div>').addClass('clear').appendTo(aRow);
 		} else {
@@ -162,15 +162,15 @@ var Path = {
 		var total = 0;
 		// Add the non-craftables to the craftables
 		var carryable = $.extend({
-			'腌肉': { type: 'tool' },
-			'子弹': { type: 'tool' },
+			'醃肉': { type: 'tool' },
+			'子彈': { type: 'tool' },
 			'手雷': {type: 'weapon' },
-			'链球': {type: 'weapon' },
-			'镭射枪': {type: 'weapon' },
-			'燃料电池': {type: 'tool' },
+			'鏈球': {type: 'weapon' },
+			'鐳射槍': {type: 'weapon' },
+			'燃料電池': {type: 'tool' },
 			'刺刀': {type: 'weapon' },
-			'护身符': {type: 'tool'},
-			'医疗药剂': {type: 'tool'}
+			'護身符': {type: 'tool'},
+			'醫療藥劑': {type: 'tool'}
 		}, Room.Craftables);
 		
 		for(var k in carryable) {
@@ -228,7 +228,7 @@ var Path = {
 		// Update bagspace
 		$('#bagspace').text('容量 ' + Math.floor(Path.getCapacity() - total) + '/' + Path.getCapacity());
 		
-		if(Path.outfit['腌肉'] > 0) {
+		if(Path.outfit['醃肉'] > 0) {
 			Button.setDisabled($('#embarkButton'), false);
 		} else {
 			Button.setDisabled($('#embarkButton'), true);
@@ -251,7 +251,7 @@ var Path = {
 		var tt = $('<div>').addClass('tooltip bottom right').appendTo(row);
 		$('<div>').addClass('row_key').text('重量').appendTo(tt);
 		$('<div>').addClass('row_val').text(Path.getWeight(name)).appendTo(tt);
-		$('<div>').addClass('row_key').text('库存').appendTo(tt);
+		$('<div>').addClass('row_key').text('庫存').appendTo(tt);
 		$('<div>').addClass('row_val').addClass('numAvailable').text(numAvailable).appendTo(tt);
 		
 		return row;
@@ -291,7 +291,7 @@ var Path = {
 	},
 	
 	setTitle: function() {
-		document.title = '探索者尘路';
+		document.title = '探索者塵路';
 	},
 	
 	embark: function() {

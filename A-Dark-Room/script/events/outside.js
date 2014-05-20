@@ -3,15 +3,15 @@
  **/
 Events.Outside = [
     { /* Ruined traps */
-    	title: '破损的陷阱',
+    	title: '破損的陷阱',
 		isAvailable: function() {
 			return Engine.activeModule == Outside && $SM.get('game.buildings["陷阱"]', true) > 0;
 		},
 		scenes: {
 			'start': {
 				text: [
-					'一些陷阱已经严重损毁.',
-					'巨大的足印导向森林.'
+					'一些陷阱已經嚴重損毀',
+					'巨大的足印導向森林'
 				],
 				onLoad: function() {
 					var numWrecked = Math.floor(Math.random() * $SM.get('game.buildings["陷阱"]', true)) + 1;
@@ -19,10 +19,10 @@ Events.Outside = [
 					Outside.updateVillage();
 					Outside.updateTrapButton();
 				},
-				notification: '一些陷阱损坏了',
+				notification: '一些陷阱損壞了',
 				buttons: {
 					'track': {
-						text: '追踪足迹',
+						text: '追踪足跡',
 						nextScene: {0.5: 'nothing', 1: 'catch'}
 					},
 					'ignore': {
@@ -33,29 +33,29 @@ Events.Outside = [
 			},
 			'nothing': {
 				text: [
-					'踪迹消失了...',
-					'森林再次归于宁静.'
+					'踪跡消失了...',
+					'森林再次歸於寧靜'
 				],
 				buttons: {
 					'end': {
-						text: '离开',
+						text: '離開',
 						nextScene: 'end'
 					}
 				}
 			},
 			'catch': {
 				text: [
-			       '在离开村子的不远处发现了一只巨大的野兽, 它的皮毛覆满了暗淡的血液.',
-			       '在武器面前, 它已经没什么抵抗力了.'
+			       '在離開村子的不遠處發現了一隻巨大的野獸，它的皮毛覆滿了暗淡的血液',
+			       '在武器面前，它已經沒什麼抵抗力了'
 		        ],
 				reward: {
 					'毛皮': 100,
 					'肉': 100,
-					'牙齿': 10
+					'牙齒': 10
 				},
 				buttons: {
 					'end': {
-						text: '离开',
+						text: '離開',
 						nextScene: 'end'
 					}
 				}
@@ -69,18 +69,18 @@ Events.Outside = [
   			return Engine.activeModule == Outside && 
   				$SM.get('game.population', true) > 10 && 
   				$SM.get('game.population', true) < 50 && 
-  				$SM.get('stores["医疗药剂"]', true) > 0;
+  				$SM.get('stores["醫療藥劑"]', true) > 0;
   		},
   		scenes: {
   			'start': {
   				text: [
-  			    '疾病在村子里面传播.',
-  			    '急需医疗药剂.'
+  			    '疾病在村子裡面傳播',
+  			    '急需醫療藥劑'
   		    ],
   		    buttons: {
   		      'heal': {
-  		        text: '1 医疗药剂',
-  		        cost: { '医疗药剂' : 1 },
+  		        text: '1 醫療藥劑',
+  		        cost: { '醫療藥劑' : 1 },
   		        nextScene: {1: 'healed'}
   		      },
   					'ignore': {
@@ -91,20 +91,20 @@ Events.Outside = [
   			},
   			'healed': {
   				text: [
-  			    '疾病被即时控制了.'
+  			    '疾病被即時控制了'
   		    ],
   		    buttons: {
   					'end': {
-  						text: '离开',
+  						text: '離開',
   						nextScene: 'end'
   					}
   				}
   			},
   			'death': {
   				text: [
-  			    '疾病蔓延在整个村庄.',
-  			    '天天都有人死去.',
-  			    '黑夜总是伴随着惊声尖叫.'
+  			    '疾病蔓延在整個村莊',
+  			    '天天都有人死去',
+  			    '黑夜總是伴隨著驚聲尖叫'
   		    ],
   		    onLoad: function() {
 				    var numKilled = Math.floor(Math.random() * 20) + 1;
@@ -112,7 +112,7 @@ Events.Outside = [
     			},
   		    buttons: {
   					'end': {
-  						text: '离开',
+  						text: '離開',
   						nextScene: 'end'
   					}
   				}
@@ -123,18 +123,18 @@ Events.Outside = [
     { /* Plague */
     	title: '瘟疫',
   		isAvailable: function() {
-  			return Engine.activeModule == Outside && $SM.get('game.population', true) > 50 && $SM.get('stores["医疗药剂"]', true) > 0;
+  			return Engine.activeModule == Outside && $SM.get('game.population', true) > 50 && $SM.get('stores["醫療藥劑"]', true) > 0;
   		},
   		scenes: {
   			'start': {
   				text: [
-  			    '一场可怕的瘟疫在村子里面迅速蔓延开.',
-  			    '急需治疗药剂.'
+  			    '一場可怕的瘟疫在村子裡面迅速蔓延開',
+  			    '急需治療藥劑'
   		    ],
   		    buttons: {
   		      'heal': {
-  		        text: '5 治疗药剂',
-  		        cost: { '医疗药剂' : 5 },
+  		        text: '5 治療藥劑',
+  		        cost: { '醫療藥劑' : 5 },
   		        nextScene: {1: 'healed'}
   		      },
   					'ignore': {
@@ -145,9 +145,9 @@ Events.Outside = [
   			},
   			'healed': {
   				text: [
-  			    '瘟疫不制止了.',
-  			    '我们只失去了几个人.',
-  			    '我们埋葬了这些死者.'
+  			    '瘟疫不制止了',
+  			    '我們只失去了幾個人',
+  			    '我們埋葬了這些死者'
   		    ],
   		    onLoad: function() {
 				    var numKilled = Math.floor(Math.random() * 5) + 2;
@@ -155,16 +155,16 @@ Events.Outside = [
     			},
   		    buttons: {
   					'end': {
-  						text: '离开',
+  						text: '離開',
   						nextScene: 'end'
   					}
   				}
   			},
   			'death': {
   				text: [
-  			    '瘟疫席卷了整个村庄.',
-  			    '尖叫恐惧声响彻了整个黑夜.',
-  			    '死亡也许是更好的归宿.'
+  			    '瘟疫席捲了整個村莊',
+  			    '尖叫恐懼聲響徹了整個黑夜',
+  			    '死亡也許是更好的歸宿'
   		    ],
   		    onLoad: function() {
 				    var numKilled = Math.floor(Math.random() * 80) + 10;
@@ -172,7 +172,7 @@ Events.Outside = [
     			},
   		    buttons: {
   					'end': {
-  						text: '离开',
+  						text: '離開',
   						nextScene: 'end'
   					}
   				}
@@ -181,16 +181,16 @@ Events.Outside = [
     },
     
     { /* Beast attack */
-    	title: '猛兽袭击',
+    	title: '猛獸襲擊',
 		isAvailable: function() {
 			return Engine.activeModule == Outside && $SM.get('game.population', true) > 0;
 		},
 		scenes: {
 			'start': {
 				text: [
-			       '一群野兽冲出了森林奔向村庄.',
-			       '战斗短暂而血腥, 兽群最终被击退了.',
-			       '村名们放弃了追击, 集体悼念了死去的人.'
+			       '一群野獸衝出了森林奔向村莊',
+			       '戰鬥短暫而血腥，獸群最終被擊退了',
+			       '村名們放棄了追擊，集體悼念了死去的人'
 		        ],
 		        onLoad: function() {
 					var numKilled = Math.floor(Math.random() * 10) + 1;
@@ -199,11 +199,11 @@ Events.Outside = [
 		        reward: {
 		        	'毛皮': 100,
 		        	'肉': 100,
-		        	'牙齿': 10
+		        	'牙齒': 10
 		        },
 		        buttons: {
 					'end': {
-						text: '离开',
+						text: '離開',
 						nextScene: 'end'
 					}
 				}
@@ -212,28 +212,28 @@ Events.Outside = [
     },
     
     { /* Soldier attack */
-    	title: '武装冲突',
+    	title: '武裝衝突',
 		isAvailable: function() {
 			return Engine.activeModule == Outside && $SM.get('game.population', true) > 0 && $SM.get('game.cityCleared');;
 		},
 		scenes: {
 			'start': {
 				text: [
-			       '一声枪响穿透树林.',
-			       '武装精良的士兵冲突森林, 向我们的人开火.',
-			       '在冲突后, 几个村名死亡, 随即武装人员就离开了.'
+			       '一聲槍響穿透樹林',
+			       '武裝精良的士兵衝突森林，向我們的人開火',
+			       '在衝突後，幾個村名死亡，隨即武裝人員就離開了'
 		        ],
 		        onLoad: function() {
 					var numKilled = Math.floor(Math.random() * 40) + 1;
 					Outside.killVillagers(numKilled);
 				},
 		        reward: {
-		        	'子弹': 10,
-		        	'腌肉': 50
+		        	'子彈': 10,
+		        	'醃肉': 50
 		        },
 		        buttons: {
 					'end': {
-						text: '离开',
+						text: '離開',
 						nextScene: 'end'
 					}
 				}

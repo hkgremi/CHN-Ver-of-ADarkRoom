@@ -17,7 +17,7 @@ div#craftBtns {
 }
 
 div#craftBtns:before {
-	content: "生产/制作:";
+	content: "生產/制作:";
 	position: relative;
 	top: -5px;
 }
@@ -29,7 +29,7 @@ div#buyBtns {
 }
 
 div#buyBtns:before {
-	content: "购买:";
+	content: "購買:";
 	position: relative;
 	top: -5px;
 }
@@ -55,7 +55,7 @@ div.storeRow {
 div#stores:before {
 	position: absolute;
 	background: white;
-	content: "储藏室";
+	content: "儲藏室";
 	left: 8px;
 	top: -13px;	
 }
@@ -73,7 +73,7 @@ div#weapons {
 div#weapons:before {
 	position: absolute;
 	background: white;
-	content: "军械库";
+	content: "軍械庫";
 	left: 8px;
 	top: -13px;	
 }

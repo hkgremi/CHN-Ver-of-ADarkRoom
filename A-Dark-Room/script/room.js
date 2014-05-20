@@ -17,66 +17,66 @@ var Room = {
 		'陷阱': {
 			button: null,
 			maximum: 10,
-			availableMsg: '工人说她能制作可以捕获活的猎物的陷阱',
-			buildMsg: '更多的陷阱能捕获更多的猎物',
-			maxMsg: "更多数量的陷阱已经不能带来益处",
+			availableMsg: '工人說她能製作可以捕獲活的獵物的陷阱',
+			buildMsg: '更多的陷阱能捕獲更多的獵物',
+			maxMsg: "更多數量的陷阱已經不能帶來益處",
 			type: 'building',
 			cost: function() {
 				var n = $SM.get('game.buildings["陷阱"]', true);
 				return {
-					'木头': 10 + (n*10) 
+					'木頭': 10 + (n*10) 
 				};
 			}
 		},
 		'筐子': {
 			button: null,
 			maximum: 1,
-			availableMsg: '工人说她能制作收集木头的筐子',
-			buildMsg: '软筐能容纳更多的木头',
+			availableMsg: '工人說她能製作收集木頭的筐子',
+			buildMsg: '軟筐能容納更多的木頭',
 			type: 'building',
 			cost: function() {
 				return {
-					'木头': 30 
+					'木頭': 30 
 				};
 			}
 		},
 		'木屋': {
 			button: null,
 			maximum: 20,
-			availableMsg: "工人说会有更多的迷路者来到这里, 他们也会加入我们.",
-			buildMsg: '工人在森林里搭起一座木屋.',
-			maxMsg: '没有空间建造木屋了.',
+			availableMsg: "工人說會有更多的迷路者來到這裡，他們也會加入我們",
+			buildMsg: '工人在森林裡搭起一座木屋',
+			maxMsg: '沒有空間建造木屋了',
 			type: 'building',
 			cost: function() {
 				var n = $SM.get('game.buildings["木屋"]', true);
 				return {
-					'木头': 100 + (n*50)
+					'木屋': 100 + (n*50)
 				};
 			}
 		},
-		'猎人小屋': {
+		'獵人小屋': {
 			button: null,
 			maximum: 1,
-			availableMsg: '我们的村民只要有了工具, 他们就能去打猎',
-			buildMsg: '猎人小屋就坐落在村子口',
+			availableMsg: '我們的村民只要有了工具，他們就能去打獵',
+			buildMsg: '獵人小屋就坐落在村子口',
 			type: 'building',
 			cost: function() {
 				return {
-					'木头': 200, 
+					'木頭': 200, 
 					'毛皮': 10,
 					'肉': 5
 				};
 			}
 		},
-		'贸易栈': {
+		'貿易棧': {
 			button: null,
 			maximum: 1,
-			availableMsg: "有了贸易栈你就能很灵活的调度物资",
-			buildMsg: "游牧民族们可以有地方落脚了",
+			availableMsg: "有了貿易棧你就能很靈活的調度物資",
+			buildMsg: "游牧民族們可以有地方落腳了",
 			type: 'building',
 			cost: function() {
 				return {
-					'木头': 400,
+					'木頭': 400,
 					'毛皮': 100
 				};
 			}
@@ -84,25 +84,25 @@ var Room = {
 		'制革坊': {
 			button: null,
 			maximum: 1,
-			availableMsg: "工人说皮革很有用, 我们的村民能搞定.",
-			buildMsg: '游牧民族们可以有地方落脚了',
+			availableMsg: "工人說皮革很有用，我們的村民能搞定",
+			buildMsg: '游牧民族們可以有地方落腳了',
 			type: 'building',
 			cost: function() {
 				return {
-					'木头': 500, 
+					'木頭': 500, 
 					'毛皮': 50
 				};
 			}
 		},
-		'腌肉坊': {
+		'醃肉坊': {
 			button: null,
 			maximum: 1,
-			availableMsg: "工人说如果不腌制, 鲜肉很快就会腐烂, 她有办法.",
-			buildMsg: '工人很快建成了腌制房, 她很想吃腊肉, 川味的.',
+			availableMsg: "工人說如果不醃製，鮮肉很快就會腐爛，她有辦法",
+			buildMsg: '工人很快建成了醃製房，她很想吃臘肉，川味的',
 			type: 'building',
 			cost: function() {
 				return {
-						'木头': 600,
+						'木頭': 600,
 					'肉': 50  
 				};
 			}
@@ -110,41 +110,41 @@ var Room = {
 		'工具房': {
 			button: null,
 			maximum: 1,
-			availableMsg: "工人说如果有合适的工具, 她能做的更好",
-			buildMsg: "工具间总算完工了, 工人兴奋极了",
+			availableMsg: "工人說如果有合適的工具，她能做的更好",
+			buildMsg: "工具間總算完工了，工人興奮極了",
 			type: 'building',
 			cost: function() {
 				return {
-					'木头': 800,
+					'木頭': 800,
 					'皮革': 100,
-					'鳞片': 10
+					'鱗片': 10
 				};
 			}
 		},
-		'炼钢炉': {
+		'煉鋼爐': {
 			button: null,
 			maximum: 1,
-			availableMsg: "工人说只要有合适的工具, 村名可以炼钢",
-			buildMsg: "炼钢炉起, 雾霾就来了",
+			availableMsg: "工人說只要有合適的工具，村名可以煉鋼",
+			buildMsg: "煉鋼爐起，霧霾就來了",
 			type: 'building',
 			cost: function() {
 				return {
-					'木头': 1500,
-					'铁': 100,
+					'木頭': 1500,
+					'鐵铁': 100,
 					'煤': 100
 				};
 			}
 		},
-		'军械库': {
+		'軍械庫': {
 			button: null,
 			maximum: 1,
-			availableMsg: "工人说稳定的武器和弹药供应是必要的",
-			buildMsg: "军械库完成! 武器入库.",
+			availableMsg: "工人說穩定的武器和彈藥供應是必要的",
+			buildMsg: "軍械庫完成！武器入庫",
 			type: 'building',
 			cost: function() {
 				return {
-					'木头': 3000,
-					'钢': 100,
+					'木頭': 3000,
+					'鋼': 100,
 					'硫磺': 50
 				};
 			}
@@ -152,11 +152,11 @@ var Room = {
 		'火炬': {
 			button: null,
 			type: 'tool',
-			buildMsg: '用以驱散黑暗的火炬',
+			buildMsg: '用以驅散黑暗的火炬',
 			cost: function() {
 				return {
 				
-					'木头': 1,
+					'木頭': 1,
 					'布匹': 1
 				};
 			}
@@ -166,23 +166,23 @@ var Room = {
 			button: null,
 			type: 'upgrade',
 			maximum: 1,
-			buildMsg: '水袋..就是用来放水的, 可惜容量小了点',
+			buildMsg: '水袋..就是用來放水的, 可惜容量小了點',
 			cost: function() {
 				return {
 					'皮革': 50
 				};
 			}
 		},
-		'水桶': {
+		'水桶'': {
 			button: null,
 			type: 'upgrade',
 			maximum: 1,
-			buildMsg: '木桶可以存放不少的水, 探险能持续更久',
+			buildMsg: '木桶可以存放不少的水，探險能持續更久',
 			cost: function() {
 				return {
 
 					'皮革': 100,
-					'铁': 20
+					'鐵': 20
 				};
 			}
 		},
@@ -190,26 +190,26 @@ var Room = {
 			button: null,
 			type: 'upgrade',
 			maximum: 1,
-			buildMsg: '你再也不会缺水了.',
+			buildMsg: '你再也不會缺水了',
 			cost: function() {
 				return {
 
-					'铁': 100,
-					'钢': 50
+					'鐵': 100,
+					'鋼': 50
 				};
 			}
 		},
 		
 
-		'骨枪': {
+		'骨槍': {
 		//'bone spear': {
 			button: null,
 			type: 'weapon',
-			buildMsg: "这枪有点糙, 但是用来突刺已经足够了",
+			buildMsg: "這槍有點糙，但是用來突刺已經足夠了",
 			cost: function() {
 				return {
-					'木头': 100,
-					'牙齿': 5
+					'木頭': 100,
+					'牙齒': 5
 				};
 			}
 		},
@@ -217,102 +217,102 @@ var Room = {
 			button: null,
 			type: 'upgrade',
 			maximum: 1,
-			buildMsg: '载得更多意味着更长更远的野外探险',
+			buildMsg: '載得更多意味著更長更遠的野外探險',
 			cost: function() {
 				return {
 					'皮革': 200
 				};
 			}
 		},
-		'货车': {
+		'貨車': {
 			button: null,
 			type: 'upgrade',
 			maximum: 1,
-			buildMsg: '货车可以载很多的物资供给',
+			buildMsg: '貨車可以載很多的物資供給',
 			cost: function() {
 				return {
-					'木头': 500,
-					'铁': 100
+					'木頭': 500,
+					'鐵': 100
 				};
 			}
 		},
-		'大货车': {
+		'大貨車': {
 			button: null,
 			type: 'upgrade',
 			maximum: 1,
-			buildMsg: '超级大货车可以装载一切',
+			buildMsg: '超級大貨車可以裝載一切',
 			cost: function() {
 				return {
-					'木头': 1000,
-					'铁': 200,
-					'钢': 100
+					'木頭': 1000,
+					'鐵': 200,
+					'鋼': 100
 				};
 			}
 		},
 		'皮甲': {
 			type: 'upgrade',
 			maximum: 1,
-			buildMsg: "皮革的确不是太牢固, 但总好过布料.",
+			buildMsg: "皮革的確不是太牢固，但總好過布料",
 			cost: function() {
 				return {
 					'皮革': 200,
-					'鳞片': 20
+					'鱗片': 20
 				};
 			}
 		},
-		'铁甲': {
+		'鐵甲': {
 			type: 'upgrade',
 			maximum: 1,
-			buildMsg: "铁比皮结实",
+			buildMsg: "鐵比皮結實",
 			cost: function() {
 				return {
 					'皮革': 200,
-					'铁': 100
+					'鐵': 100
 				};
 			}
 		},
-		'钢甲': {
+		'鋼甲': {
 			type: 'upgrade',
 			maximum: 1,
-			buildMsg: "钢又比铁更牢固",
+			buildMsg: "鋼又比鐵更牢固",
 			cost: function() {
 				return {
 					'皮革': 200,
-					'钢': 100
+					'鋼': 100
 				};
 			}
 		},
-		'铁剑': {
+		'鐵劍': {
 			button: null,
 			type: 'weapon',
-			buildMsg: "铁剑很尖锐, 在野外提供给我们足够的保护.",
+			buildMsg: "鐵劍很尖銳，在野外提供給我們足夠的保護",
 			cost: function() {
 				return {
-					'木头': 200,
+					'木頭': 200,
 					'皮革': 50,
-					'铁': 20
+					'鐵': 20
 				};
 			}
 		},
-		'钢剑': {
+		'鋼劍': {
 			button: null,
 			type: 'weapon',
-			buildMsg: "钢剑很锋利, 很可怕.",
+			buildMsg: "鋼劍很鋒利，很可怕",
 			cost: function() {
 				return {
-					'木头': 500,
+					'木頭': 500,
 					'皮革': 100,
-					'钢': 20
+					'鋼': 20
 				};
 			}
 		},
-		'步枪': {
+		'步槍': {
 			type: 'weapon',
-			buildMsg: "黑火药和子弹, 好复古的感觉.",
+			buildMsg: "黑火藥和子彈，好復古的感覺",
 			cost: function() {
 				return {
-					'木头': 200,
-					'钢': 50,
+					'木頭': 200,
+					'鋼': 50,
 					'硫磺': 50
 				};
 			}
@@ -320,7 +320,7 @@ var Room = {
 	},
 	
 	TradeGoods: {
-		'鳞片': {
+		'鱗片': {
 			type: 'good',
 			cost: function() {
 				return { 
@@ -328,7 +328,7 @@ var Room = {
 				};
 			}
 		},
-		'牙齿': {
+		'牙齒': {
 			type: 'good',
 			cost: function() {
 				return { 
@@ -336,12 +336,12 @@ var Room = {
 				};
 			}
 		},
-		'铁': {
+		'鐵': {
 			type: 'good',
 			cost: function() {
 				return {
 					'毛皮': 150,
-					'鳞片': 50
+					'鱗片': 50
 				};
 			}
 		},
@@ -350,50 +350,50 @@ var Room = {
 			cost: function() {
 				return {
 					'毛皮': 200,
-					'牙齿': 50
+					'牙齒': 50
 				};
 			}
 		},
-		'钢': {
+		'鋼': {
 			type: 'good',
 			cost: function() {
 				return {
 					'毛皮': 300,
-					'鳞片': 50,
-					'牙齿': 50
+					'鱗片': 50,
+					'牙齒': 50
 				};
 			}
 		},
-		'医疗药剂': {
+		'醫療藥劑': {
 			type: 'good',
 			cost: function() {
 				return {
-					'鳞片': 50, '牙齿': 30
+					'鱗片': 50, '牙齒': 30
 				};
 			}
 		},
-		'子弹': {
+		'子彈': {
 			type: 'good',
 			cost: function() {
 				return {
-					'鳞片': 10
+					'鱗片': 10
 				};
 			}
 		},
-		'燃料电池': {
+		'燃料電池': {
 			type: 'good',
 			cost: function() {
 				return {
-					'鳞片': 10,
-					'牙齿': 10
+					'鱗片': 10,
+					'牙齒': 10
 				};
 			}
 		},
-		'链球': {
+		'鏈球': {
 			type: 'weapon',
 			cost: function() {
 				return {
-					'牙齿': 10
+					'牙齒': 10
 				};
 			}
 		},
@@ -401,8 +401,8 @@ var Room = {
 			type: 'weapon',
 			cost: function() {
 				return {
-					'鳞片': 100,
-					'牙齿': 50
+					'鱗片': 100,
+					'牙齒': 50
 				};
 			}
 		},
@@ -410,8 +410,8 @@ var Room = {
 			type: 'weapon',
 			cost: function() {
 				return {
-					'鳞片': 500,
-					'牙齿': 250
+					'鱗片': 500,
+					'牙齒': 250
 				};
 			}
 		},
@@ -420,26 +420,26 @@ var Room = {
 			cost: function() {
 				return {
 					'毛皮': 1500,
-					'鳞片': 750,
-					'牙齿': 300
+					'鱗片': 750,
+					'牙齒': 300
 				};
 			}
 		},
-		'罗盘': {
+		'指南針': {
 			type: 'upgrade',
 			maximum: 1,
 			cost: function() {
 				return { 
 					'毛皮': 400, 
-					'鳞片': 20, 
-					'牙齿': 10 
+					'鱗片': 20, 
+					'牙齒': 10 
 				};
 			}
 		}
 	},
 	
 	MiscItems: {
-	  '镭射枪': {
+	  '鐳射槍': {
 	    type: 'weapon'
 	  }
 	},
@@ -481,22 +481,22 @@ var Room = {
 		// Create the light button
 		new Button.Button({
 			id: 'lightButton',
-			text: '点火',
+			text: '點火',
 			click: Room.lightFire,
 			cooldown: Room._STOKE_COOLDOWN,
 			width: '80px',
-			//cost: {'木头': 1}
-			 cost: {'木头': 5} 
+			//cost: {'木頭': 1}
+			 cost: {'木頭': 5} 
 		}).appendTo('div#roomPanel');
 		
 		// Create the stoke button
 		new Button.Button({
 			id: 'stokeButton',
-			text: "添加木头",
+			text: "添加木頭",
 			click: Room.stokeFire,
 			cooldown: Room._STOKE_COOLDOWN,
 			width: '80px',
-			cost: {'木头': 1}
+			cost: {'木頭': 1}
 		}).appendTo('div#roomPanel');
 		
 		// Create the stores container
@@ -524,7 +524,7 @@ var Room = {
 		if($SM.get('game.builder.level') >= 0 && $SM.get('game.builder.level') < 3) {
 			Room._builderTimer = setTimeout(Room.updateBuilderState, Room._BUILDER_STATE_DELAY);
 		}
-		if($SM.get('game.builder.level') == 1 && $SM.get('stores["木头"]', true) < 0) {
+		if($SM.get('game.builder.level') == 1 && $SM.get('stores["木頭"]', true) < 0) {
 			setTimeout(Room.unlockForest, Room._NEED_WOOD_DELAY);
 		}
 		setTimeout($SM.collectIncome, 1000);
@@ -546,10 +546,10 @@ var Room = {
 			$SM.add('game.builder.level', 1);
 			$SM.setIncome('工人', {
 				delay: 10,
-				stores: {'木头' : 2 }
+				stores: {'木頭' : 2 }
 			});
 			Room.updateIncomeView();
-			Notifications.notify(Room, "陌生人围坐在火堆旁, 她说她会帮忙建造建筑或者制造物件工具.");
+			Notifications.notify(Room, "陌生人圍坐在火堆旁，她說她會幫忙建造建築或者製造物件工具");
 		}
 
 		Engine.moveStoresView(null, transition_diff);
@@ -564,11 +564,11 @@ var Room = {
 			}
 			return null;
 		},
-		Freezing: { value: 0, text: '极度深寒' },
+		Freezing: { value: 0, text: '極度深寒' },
 		Cold: { value: 1, text: '很冷' },
-		Mild: { value: 2, text: '不冷不热' },
-		Warm: { value: 3, text: '温暖' },
-		Hot: { value: 4, text: '很热' }
+		Mild: { value: 2, text: '不冷不熱' },
+		Warm: { value: 3, text: '溫暖' },
+		Hot: { value: 4, text: '很熱' }
 	},
 	
 	FireEnum: {
@@ -580,15 +580,15 @@ var Room = {
 			}
 			return null;
 		},
-		Dead: { value: 0, text: '熄灭了' },
-		Smoldering: { value: 1, text: '冒烟了' },
+		Dead: { value: 0, text: '熄滅了' },
+		Smoldering: { value: 1, text: '冒煙了' },
 		Flickering: { value: 2, text: '有火苗了' },
-		Burning: { value: 3, text: '燃烧中' },
-		Roaring: { value: 4, text: '熊熊燃烧中' }
+		Burning: { value: 3, text: '燃燒中' },
+		Roaring: { value: 4, text: '熊熊燃燒中' }
 	},
 	
 	setTitle: function() {
-		var title = Room.fire.value < 2 ? "小黑屋" : "温暖的木屋";
+		var title = Room.fire.value < 2 ? "小黑屋" : "溫暖的木屋";
 		if(Engine.activeModule == this) {
 			document.title = title;
 		}
@@ -612,7 +612,7 @@ var Room = {
 			}
 		}
 		
-		if(!$SM.get('stores["木头"]')) {
+		if(!$SM.get('stores["木頭"]')) {
 			light.addClass('free');
 			stoke.addClass('free');
 		} else {
@@ -624,27 +624,27 @@ var Room = {
 	_fireTimer: null,
 	_tempTimer: null,
 	lightFire: function() {
-		var wood = $SM.get('stores["木头"]');
+		var wood = $SM.get('stores["木頭"]');
 		if(wood < 5) {
-			Notifications.notify(Room, "木头不足, 无法生火");
+			Notifications.notify(Room, "木頭不足，無法生火");
 			Button.clearCooldown($('#lightButton.button'));
 			return;
 		} else if(wood > 4) {
-			$SM.set('stores["木头"]', wood - 5);
+			$SM.set('stores["木頭"]', wood - 5);
 		}
 		Room.fire = Room.FireEnum.Burning;
 		Room.onFireChange();
 	},
 	
 	stokeFire: function() {
-		var wood = $SM.get('stores["木头"]');
+		var wood = $SM.get('stores["木頭"]');
 		if(wood === 0) {
-			Notifications.notify(Room, "木头用光了");
+			Notifications.notify(Room, "木頭用光了");
 			Button.clearCooldown($('#stokeButton.button'));
 			return;
 		}
 		if(wood > 0) {
-			$SM.set('stores["木头"]', wood - 1);
+			$SM.set('stores["木頭"]', wood - 1);
 		}
 		if(Room.fire.value < 4) {
 			Room.fire = Room.FireEnum.fromInt(Room.fire.value + 1);
@@ -659,7 +659,7 @@ var Room = {
 		Notifications.notify(Room, "火堆 " + Room.fire.text, true);
 		if(Room.fire.value > 1 && $SM.get('game.builder.level') < 0) {
 			$SM.set('game.builder.level', 0);
-			Notifications.notify(Room, "火堆的光芒映过窗户射进了茫茫黑暗");
+			Notifications.notify(Room, "火堆的光芒映過窗戶射進了茫茫黑暗");
 			setTimeout(Room.updateBuilderState, Room._BUILDER_STATE_DELAY);
 		}	
 		window.clearTimeout(Room._fireTimer);
@@ -669,11 +669,11 @@ var Room = {
 	},
 	
 	coolFire: function() {
-		var wood = $SM.get('stores["木头"]');
+		var wood = $SM.get('stores["木頭"]');
 		if(Room.fire.value <= Room.FireEnum.Flickering.value &&
 			$SM.get('game.builder.level') > 3 && wood > 0) {
-			Notifications.notify(Room, "工人给火堆添加木头", true);
-			$SM.set('stores["木头"]', wood - 1);
+			Notifications.notify(Room, "工人給火堆添加木頭", true);
+			$SM.set('stores["木頭"]', wood - 1);
 			Room.fire = Room.FireEnum.fromInt(Room.fire.value + 1);
 		}
 		if(Room.fire.value > 0) {
@@ -702,15 +702,15 @@ var Room = {
 	unlockForest: function() {
 		$SM.set('stores["木头"]', 4);
 		Outside.init();
-		Notifications.notify(Room, "外面寒风呼啸");
-		Notifications.notify(Room, "木头快烧完了");
+		Notifications.notify(Room, "外面寒風泘嘯");
+		Notifications.notify(Room, "木頭快燒完了");
 		Engine.event('progress', 'outside');
 	},
 	
 	updateBuilderState: function() {
 		var lBuilder = $SM.get('game.builder.level');
 		if(lBuilder == 0) {
-			Notifications.notify(Room, "一个衣衫褴褛的陌生人跌撞进门, 摔倒在墙角");
+			Notifications.notify(Room, "一個衣衫襤褸的陌生人跌撞進門，摔倒在牆角");
 			lBuilder = $SM.setget('game.builder.level', 1);
 			setTimeout(Room.unlockForest, Room._NEED_WOOD_DELAY);
 		} 
@@ -718,10 +718,10 @@ var Room = {
 			var msg = "";
 			switch(lBuilder) {
 			case 1:
-				msg = "陌生人冻得发抖并且胡言乱语不知所云.";
+				msg = "陌生人凍得發抖並且胡言亂語不知所云";
 				break;
 			case 2:
-				msg = "陌生人缩在墙角并不再发抖, 呼吸也平静下来了.";
+				msg = "陌生人縮在牆角並不再發抖，呼吸也平靜下來了";
 				break;
 			}
 			Notifications.notify(Room, msg);
@@ -887,7 +887,7 @@ var Room = {
 		
 		$SM.add('stores["'+thing+'"]', 1);
 		
-		if(thing == '罗盘') {
+		if(thing == '指南針') {
 			Path.openPath();
 		}
 	},
@@ -895,7 +895,7 @@ var Room = {
 	build: function(buildBtn) {
 		var thing = $(buildBtn).attr('buildThing');
 		if(Room.temperature.value <= Room.TempEnum.Cold.value) {
-			Notifications.notify(Room, "工人在发抖");
+			Notifications.notify(Room, "工人在發抖");
 			return false;
 		}
 		var craftable = Room.Craftables[thing];
@@ -965,7 +965,7 @@ var Room = {
 			return true;
 		}
 		// Show buttons if we have at least 1/2 the wood, and all other components have been seen.
-		if($SM.get('stores["木头"]', true) < cost['木头'] * 0.5) {
+		if($SM.get('stores["木頭"]', true) < cost['木頭'] * 0.5) {
 			return false;
 		}
 		for(var c in cost) {
@@ -985,8 +985,8 @@ var Room = {
 	buyUnlocked: function(thing) {
 		if(Room.buttons[thing]) {
 			return true;
-		} else if($SM.get('game.buildings["贸易栈"]', true) > 0) {
-			if(thing == '罗盘' || typeof $SM.get('stores["'+thing+'"]') != 'undefined') {
+		} else if($SM.get('game.buildings["貿易棧"]', true) > 0) {
+			if(thing == '指南針' || typeof $SM.get('stores["'+thing+'"]') != 'undefined') {
 				// Allow the purchase of stuff once you've seen it
 				return true;
 			}
@@ -1011,7 +1011,7 @@ var Room = {
 		
 		var buySection = $('#buyBtns');
 		var bNeedsAppend = false;
-		if(buySection.length == 0 && $SM.get('game.buildings["贸易栈"]', true) > 0) {
+		if(buySection.length == 0 && $SM.get('game.buildings["貿易棧"]', true) > 0) {
 			buySection = $('<div>').attr('id', 'buyBtns').css('opacity', 0);
 			bNeedsAppend = true;
 		}

@@ -226,8 +226,8 @@ var StateManager = {
 		if(typeof version != 'number') version = 1.0;
 		if(version == 1.0) {
 			// v1.1 introduced the Lodge, so get rid of lodgeless hunters
-			$SM.remove('outside.workers["捕猎手"]', true);
-			$SM.remove('income["捕猎手"]', true);
+			$SM.remove('outside.workers["捕獵手"]', true);
+			$SM.remove('income["捕獵手"]', true);
 			Engine.log('upgraded save to v1.1');
 			version = 1.1;
 		};
@@ -376,7 +376,7 @@ var StateManager = {
 		$SM.setIncome('小偷', {
 			delay: 10,
 			stores: {
-				'木头': -10,
+				'木頭': -10,
 				'毛皮': -5,
 				'肉': -5
 			}

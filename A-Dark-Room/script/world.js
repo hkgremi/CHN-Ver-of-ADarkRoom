@@ -42,26 +42,26 @@ var World = {
 	EAST:  [ 1,  0],
 	
 	Weapons: {
-		'拳击': {
-			verb: '拳击',
+		'拳擊': {
+			verb: '拳擊',
 			type: 'unarmed',
 			damage: 1,
 			cooldown: 2
 		},
-		'骨枪': {
+		'骨槍': {
 			verb: '突',
 			type: 'melee',
 			damage: 2,
 			cooldown: 2
 		},
-		'铁剑': {
-			verb: '挥击',
+		'鐵劍': {
+			verb: '揮擊',
 			type: 'melee',
 			damage: 4,
 			cooldown: 2
 		},
-		'钢剑': {
-			verb: '猛击',
+		'鋼劍': {
+			verb: '猛擊',
 			type: 'melee',
 			damage: 6,
 			cooldown: 2
@@ -72,33 +72,33 @@ var World = {
 			damage: 8,
 			cooldown: 2
 		},
-		'步枪': {
-			verb: '射击',
+		'步槍': {
+			verb: '射擊',
 			type: 'ranged',
 			damage: 5,
 			cooldown: 1,
-			cost: { '子弹': 1 }
+			cost: { '子彈': 1 }
 		},
-		'镭射枪': {
+		'鐳射槍': {
 			verb: '引爆',
 			type: 'ranged',
 			damage: 8,
 			cooldown: 1,
-			cost: { '燃料电池': 1 }
+			cost: { '燃料電池': 1 }
 		},
 		'手雷': {
-			verb: '投掷',
+			verb: '投擲',
 			type: 'ranged',
 			damage: 15,
 			cooldown: 5,
 			cost: { '手雷': 1 }
 		},
-		'链球': {
-			verb: '纠缠',
+		'鏈球': {
+			verb: '糾纏',
 			type: 'ranged',
 			damage: 'stun',
 			cooldown: 15,
-			cost: { '链球': 1 }
+			cost: { '鏈球': 1 }
 		}
 	},
 	
@@ -116,22 +116,22 @@ var World = {
 		World.TILE_PROBS[World.TILE.BARRENS] = 0.5;
 		
 		// Setpiece definitions
-		World.LANDMARKS[World.TILE.OUTPOST] = { num: 0, minRadius: 0, maxRadius: 0, scene: '哨站', label: '前&nbsp;哨&nbsp;战' };
-		World.LANDMARKS[World.TILE.IRON_MINE] = { num: 1, minRadius: 5, maxRadius: 5, scene: '铁矿', label: '铁&nbsp;矿' };
-		World.LANDMARKS[World.TILE.COAL_MINE] = { num: 1, minRadius: 10, maxRadius: 10, scene: '煤矿', label: '煤&nbsp;矿' };
-		World.LANDMARKS[World.TILE.SULPHUR_MINE] = { num: 1, minRadius: 20, maxRadius: 20, scene: '硫磺矿', label: '硫&nbsp;磺&nbsp;矿' };
-		World.LANDMARKS[World.TILE.HOUSE] = { num: 10, minRadius: 0, maxRadius: World.RADIUS * 1.5, scene: '废屋', label: '废&nbsp;弃&nbsp;的&nbsp;房&nbsp;屋' };
+		World.LANDMARKS[World.TILE.OUTPOST] = { num: 0, minRadius: 0, maxRadius: 0, scene: '哨站', label: '前&nbsp;哨&nbsp;戰' };
+		World.LANDMARKS[World.TILE.IRON_MINE] = { num: 1, minRadius: 5, maxRadius: 5, scene: '鐵礦', label: '鐵&nbsp;礦' };
+		World.LANDMARKS[World.TILE.COAL_MINE] = { num: 1, minRadius: 10, maxRadius: 10, scene: '煤礦', label: '煤&nbsp;礦' };
+		World.LANDMARKS[World.TILE.SULPHUR_MINE] = { num: 1, minRadius: 20, maxRadius: 20, scene: '硫磺礦', label: '硫&nbsp;磺&nbsp;礦' };
+		World.LANDMARKS[World.TILE.HOUSE] = { num: 10, minRadius: 0, maxRadius: World.RADIUS * 1.5, scene: '廢屋', label: '廢&nbsp;棄&nbsp;的&nbsp;房&nbsp;屋' };
 		World.LANDMARKS[World.TILE.CAVE] = { num: 5, minRadius: 3, maxRadius: 10, scene: '洞穴', label: '洞&nbsp;穴' };
-		World.LANDMARKS[World.TILE.TOWN] = { num: 10, minRadius: 10, maxRadius: 20, scene: '小镇', label: '弃&nbsp;镇' };
-		World.LANDMARKS[World.TILE.CITY] = { num: 20, minRadius: 20, maxRadius: World.RADIUS * 1.5, scene: '城镇', label: '弃&nbsp;城' };
-		World.LANDMARKS[World.TILE.SHIP] = { num: 1, minRadius: 28, maxRadius: 28, scene: '飞船', label: '坠&nbsp;毁&nbsp;的&nbsp;星&nbsp;际&nbsp;飞&nbsp;船'};
+		World.LANDMARKS[World.TILE.TOWN] = { num: 10, minRadius: 10, maxRadius: 20, scene: '小鎮', label: '棄&nbsp;鎮' };
+		World.LANDMARKS[World.TILE.CITY] = { num: 20, minRadius: 20, maxRadius: World.RADIUS * 1.5, scene: '城鎮', label: '棄&nbsp;城' };
+		World.LANDMARKS[World.TILE.SHIP] = { num: 1, minRadius: 28, maxRadius: 28, scene: '飛船', label: '墜&nbsp;毀&nbsp;的&nbsp;星&nbsp;際&nbsp;飛&nbsp ;船'};
 		World.LANDMARKS[World.TILE.BOREHOLE] = { num: 10, minRadius: 15, maxRadius: World.RADIUS * 1.5, scene: '巨坑', label: '巨&nbsp;坑'};
-		World.LANDMARKS[World.TILE.BATTLEFIELD] = { num: 5, minRadius: 18, maxRadius: World.RADIUS * 1.5, scene: '战场', label: '古&nbsp;战&nbsp;场'};
-		World.LANDMARKS[World.TILE.SWAMP] = { num: 1, minRadius: 15, maxRadius: World.RADIUS * 1.5, scene: '沼泽', label: '泥&nbsp;泞&nbsp;沼&nbsp;泽'};
+		World.LANDMARKS[World.TILE.BATTLEFIELD] = { num: 5, minRadius: 18, maxRadius: World.RADIUS * 1.5, scene: '戰場', label: '古&nbsp;戰&nbsp;場'};
+		World.LANDMARKS[World.TILE.SWAMP] = { num: 1, minRadius: 15, maxRadius: World.RADIUS * 1.5, scene: '沼澤', label: '泥&nbsp;濘&nbsp;沼&nbsp;澤'};
 		
 		// Only add the cache if there is prestige data
 		if($SM.get('previous.stores')) {
-    			World.LANDMARKS[World.TILE.CACHE] = { num: 1, minRadius: 10, maxRadius: World.RADIUS * 1.5, scene: '临时', label: '小&nbsp;黑&nbsp;屋'};
+    			World.LANDMARKS[World.TILE.CACHE] = { num: 1, minRadius: 10, maxRadius: World.RADIUS * 1.5, scene: '臨時', label: '小&nbsp;黑&nbsp;屋'};
 		}
 		
 		if(typeof $SM.get('features.location.world') == 'undefined') {
@@ -259,9 +259,9 @@ var World = {
 			total += num * Path.getWeight(k);
 			if(num > 0 && item.length == 0) {
 				item = World.createItemDiv(k, num);
-				if(k == '腌肉' && World.water > 0) {
+				if(k == '醃肉' && World.water > 0) {
 					item.insertAfter(water);
-				} else if(k == '腌肉') {
+				} else if(k == '醃肉') {
 					item.prependTo(supplies);
 				} else {
 					item.appendTo(supplies);
@@ -281,7 +281,7 @@ var World = {
 		$('#backpackTitle').text(t);
 		
 		// Update bagspace
-		$('#backpackSpace').text('行囊空间 ' + Math.floor(Path.getCapacity() - total) + '/' + Path.getCapacity());
+		$('#backpackSpace').text('行囊空間 ' + Math.floor(Path.getCapacity() - total) + '/' + Path.getCapacity());
 	},
 	
 	setWater: function(w) {
@@ -340,9 +340,9 @@ var World = {
 		World.doSpace();
 		if(World.checkDanger()) {
 			if(World.danger) {
-				Notifications.notify(World, '离村子很远了, 这样极其危险');
+				Notifications.notify(World, '離村子很遠了，這樣極其危險');
 			} else {
-				Notifications.notify(World, '总算安全了');
+				Notifications.notify(World, '總算安全了');
 			}
 		}
 	},
@@ -410,11 +410,11 @@ var World = {
 	checkDanger: function() {
 		World.danger = typeof World.danger == 'undefined' ? false: World.danger;
 		if(!World.danger) {
-			if(!$SM.get('stores["铁甲"]', true) > 0 && World.getDistance() >= 8) {
+			if(!$SM.get('stores["鐵甲"]', true) > 0 && World.getDistance() >= 8) {
 				World.danger = true;
 				return true;
 			} 
-			if(!$SM.get('stores["钢甲"]', true) > 0 && World.getDistance() >= 18) {
+			if(!$SM.get('stores["鋼甲"]', true) > 0 && World.getDistance() >= 18) {
 				World.danger = true;
 				return true;
 			}
@@ -423,7 +423,7 @@ var World = {
 				World.danger = false;
 				return true;
 			}
-			if(World.getDistance < 18 && $SM.get('stores["铁甲"]', true) > 0) {
+			if(World.getDistance < 18 && $SM.get('stores["鐵甲"]', true) > 0) {
 				World.danger = false;
 				return true;
 			}
@@ -436,24 +436,24 @@ var World = {
 		World.waterMove++;
 		// Food
 		var movesPerFood = World.MOVES_PER_FOOD;
-		movesPerFood *= $SM.hasPerk('避免饥饿') ? 2 : 1;
+		movesPerFood *= $SM.hasPerk('避免飢餓') ? 2 : 1;
 		if(World.foodMove >= movesPerFood) {
 			World.foodMove = 0;
-			var num = Path.outfit['腌肉'];
+			var num = Path.outfit['醃肉'];
 			num--;
 			if(num == 0) {
-				Notifications.notify(World, '腌肉消耗殆尽');
+				Notifications.notify(World, '醃肉消耗殆盡');
 			} else if(num < 0) {
 				// Starvation! Hooray!
 				num = 0;
 				if(!World.starvation) {
-					Notifications.notify(World, '人是铁饭是钢, 饥饿如山一般压来');
+					Notifications.notify(World, '人是鐵飯是鋼，飢餓如山一般壓來');
 					World.starvation = true;
 				} else {
 					$SM.set('character.starved', $SM.get('character.starved', true));
 					$SM.add('character.starved', 1);
-					if($SM.get('character.starved') >= 10 && !$SM.hasPerk('避免饥饿')) {
-						$SM.addPerk('避免饥饿');
+					if($SM.get('character.starved') >= 10 && !$SM.hasPerk('避免飢餓')) {
+						$SM.addPerk('避免飢餓');
 					}
 					World.die();
 					return false;
@@ -462,7 +462,7 @@ var World = {
 				World.starvation = false;
 				World.setHp(World.health + World.meatHeal());
 			}
-			Path.outfit['腌肉'] = num;
+			Path.outfit['醃肉'] = num;
 		}
 		// Water
 		var movesPerWater = World.MOVES_PER_WATER;
@@ -472,11 +472,11 @@ var World = {
 			var water = World.water;
 			water--;
 			if(water == 0) {
-				Notifications.notify(World, '水已耗尽');
+				Notifications.notify(World, '水已耗盡');
 			} else if(water < 0) {
 				water = 0;
 				if(!World.thirst) {
-					Notifications.notify(World, '口舌生烟, 干渴如斯');
+					Notifications.notify(World, '口舌生煙，乾渴如斯');
 					World.thirst = true;
 				} else {
 					$SM.set('character.dehydrated', $SM.get('character.dehydrated', true));
@@ -497,7 +497,7 @@ var World = {
 	},
 	
 	meatHeal: function() {
-		return World.MEAT_HEAL * ($SM.hasPerk('九阳神功') ? 2 : 1);
+		return World.MEAT_HEAL * ($SM.hasPerk('九陽神功') ? 2 : 1);
 	},
 	
 	medsHeal: function() {
@@ -509,7 +509,7 @@ var World = {
 		World.fightMove++;
 		if(World.fightMove > World.FIGHT_DELAY) {
 			var chance = World.FIGHT_CHANCE;
-			chance *= $SM.hasPerk('潜行术') ? 0.5 : 1;
+			chance *= $SM.hasPerk('潛行術') ? 0.5 : 1;
 			if(Math.random() < chance) {
 				World.fightMove = 0;
 				Events.triggerFight();
@@ -549,30 +549,30 @@ var World = {
 			case World.TILE.FOREST:
 				switch(newTile) {
 					case World.TILE.FIELD:
-						msg = "落叶, 枯草, 黄沙, 响铃.";
+						msg = "落葉，枯草，黃沙，響鈴";
 						break;
 					case World.TILE.BARRENS:
-						msg = "朽木, 废土, 狂沙, 死地.";
+						msg = "朽木，廢土，狂沙，死地";
 						break;
 				}
 				break;
 			case World.TILE.FIELD:
 				switch(newTile) {
 					case World.TILE.FOREST:
-						msg = "树木仅存于地平线, 绿草远不是落木枯叶的敌手.";
+						msg = "樹木僅存於地平線，綠草遠不是落木枯葉的敵手";
 						break;
 					case World.TILE.BARRENS:
-						msg = "枯草地, 褐连天.";
+						msg = "枯草地，褐連天";
 						break;
 				}
 				break;
 			case World.TILE.BARRENS:
 				switch(newTile) {
 					case World.TILE.FIELD:
-						msg = "贫瘠之地嵌在死海一般的枯草地中, 随着干燥的微风摇摆不定.";
+						msg = "貧瘠之地嵌在死海一般的枯草地中，隨著乾燥的微風搖擺不定";
 						break;
 					case World.TILE.FOREST:
-						msg = "粗大的树干从贫地中崛起, 形成坚实的树墙, 他们的巨大枝杈扭曲在一起, 仿佛苍穹一般.";
+						msg = "粗大的樹幹從貧地中崛起，形成堅實的樹牆，他們的巨大枝杈扭曲在一起，彷彿蒼穹一般";
 						break;
 				}
 				break;
@@ -653,7 +653,7 @@ var World = {
 				var pos = World.placeLandmark(landmark.minRadius, landmark.maxRadius, k, map);
 				if(k == World.TILE.SHIP) {
 					var dx = pos[0] - World.RADIUS, dy = pos[1] - World.RADIUS;
-					var horz = dx < 0 ? '西' : '东';
+					var horz = dx < 0 ? '西' : '東';
 					var vert = dy < 0 ? '北' : '南';
 					if(Math.abs(dx) / 2 > Math.abs(dy)) {
 						World.dir = horz;
@@ -808,7 +808,7 @@ var World = {
 			Engine.event('game event', 'death');
 			Engine.keyLock = true;
 			// Dead! Discard any world changes and go home
-			Notifications.notify(World, '整个世界都在消散');
+			Notifications.notify(World, '整個世界都在消散');
 			World.state = null;
 			Path.outfit = {};
 			$('#outerSlider').animate({opacity: '0'}, 600, 'linear', function() {
@@ -831,17 +831,17 @@ var World = {
 	goHome: function() {
 		// Home safe! Commit the changes.
 		$SM.setM('game.world', World.state);
-		if(World.state.sulphurmine && $SM.get('game.buildings["硫磺矿"]', true) == 0) {
-			$SM.add('game.buildings["硫磺矿"]', 1);
-			Engine.event('progress', '硫磺矿');
+		if(World.state.sulphurmine && $SM.get('game.buildings["硫磺礦"]', true) == 0) {
+			$SM.add('game.buildings["硫磺礦"]', 1);
+			Engine.event('progress', '硫磺礦');
 		}
-		if(World.state.ironmine && $SM.get('game.buildings["铁矿"]', true) == 0) {
-			$SM.add('game.buildings["铁矿"]', 1);
-			Engine.event('progress', '铁矿');
+		if(World.state.ironmine && $SM.get('game.buildings["鐵礦"]', true) == 0) {
+			$SM.add('game.buildings["鐵礦"]', 1);
+			Engine.event('progress', '鐵礦');
 		}
-		if(World.state.coalmine && $SM.get('game.buildings["煤矿"]', true) == 0) {
-			$SM.add('game.buildings["煤矿"]', 1);
-			Engine.event('progress', '煤矿');
+		if(World.state.coalmine && $SM.get('game.buildings["煤礦"]', true) == 0) {
+			$SM.add('game.buildings["煤礦"]', 1);
+			Engine.event('progress', '煤礦');
 		}
 		if(World.state.ship && !$SM.get('features.location.spaceShip')) {
 			Ship.init();
@@ -851,7 +851,7 @@ var World = {
 		
 		// Clear the embark cooldown
 		var btn = Button.clearCooldown($('#embarkButton'));
-		if(Path.outfit['腌肉'] > 0) {
+		if(Path.outfit['醃肉'] > 0) {
 			Button.setDisabled(btn, false);
 		}
 		
@@ -868,14 +868,14 @@ var World = {
 	},
 	
 	leaveItAtHome: function(thing) {
-		 return thing != '腌肉' && thing != '子弹' && thing != '燃料电池'  && thing != '护身符' && thing != '医疗药剂'
+		 return thing != '腌肉' && thing != '子彈' && thing != '燃料電池'  && thing != '護身符' && thing != '醫療藥劑'
 			 && typeof World.Weapons[thing] == 'undefined' && typeof Room.Craftables[thing] == 'undefined';
 	},
 	
 	getMaxHealth: function() {
-		if($SM.get('stores["钢甲"]', true) > 0) {
+		if($SM.get('stores["鋼甲"]', true) > 0) {
 			return World.BASE_HEALTH + 35;
-		} else if($SM.get('stores["铁甲"]', true) > 0) {
+		} else if($SM.get('stores["鐵甲"]', true) > 0) {
 			return World.BASE_HEALTH + 15;
 		} else if($SM.get('stores["皮甲"]', true) > 0) {
 			return World.BASE_HEALTH + 5;
@@ -884,7 +884,7 @@ var World = {
 	},
 	
 	getHitChance: function() {
-		if($SM.hasPerk('兰花佛穴手')) {
+		if($SM.hasPerk('蘭花佛穴手')) {
 			return World.BASE_HIT_CHANCE + 0.1;
 		}
 		return World.BASE_HIT_CHANCE;
@@ -912,7 +912,7 @@ var World = {
 	},
 	
 	useOutpost: function() {
-		Notifications.notify(null, '水又装满了');
+		Notifications.notify(null, '水又裝滿了');
 		World.setWater(World.getMaxWater());
 		// Mark this outpost as used
 		World.usedOutposts[World.curPos[0] + ',' + World.curPos[1]] = true;
@@ -939,7 +939,7 @@ var World = {
 	},
 	
 	setTitle: function() {
-		document.title = '贫瘠之地';
+		document.title = '貧瘠之地';
 	},
 	
 	copyPos: function(pos) {

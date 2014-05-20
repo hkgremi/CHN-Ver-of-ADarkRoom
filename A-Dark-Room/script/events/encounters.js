@@ -4,14 +4,14 @@
 Events.Encounters = [
 	/* Tier 1 */
 	{ /* Snarling Beast */
-		title: '咆哮的野兽',
+		title: '咆哮的野獸',
  		isAvailable: function() {
  			return World.getDistance() <= 10 && World.getTerrain() == World.TILE.FOREST;
  		},
  		scenes: {
  			'start': {
  				combat: true,
- 				enemy: '暴怒野兽',
+ 				enemy: '暴怒野獸',
  				chara: 'B',
  				damage: 1,
  				hit: 0.8,
@@ -28,18 +28,18 @@ Events.Encounters = [
  						max: 3,
  						chance: 1
  					},
- 					'牙齿': {
+ 					'牙齒': {
  						min: 1,
  						max: 3,
  						chance: 0.8
  					}
  				},
- 				notification: '一只咆哮的野兽从草丛中串起'
+ 				notification: '一隻咆哮的野獸從草叢中串起'
  			}
  		}
 	},
 	{ /* Gaunt Man */
-     	title: '一个落魄的人',
+     	title: '一個落魄的人',
   		isAvailable: function() {
   			return World.getDistance() <= 10 && World.getTerrain() == World.TILE.BARRENS;
   		},
@@ -58,7 +58,7 @@ Events.Encounters = [
   						max: 3,
   						chance: 0.8
   					},
-  					'牙齿': {
+  					'牙齒': {
   						min: 1,
   						max: 2,
   						chance: 0.8
@@ -69,31 +69,31 @@ Events.Encounters = [
   						chance: 0.5
   					}
   				},
-  				notification: '一个疯狂的家伙出现了'
+  				notification: '一個瘋狂的傢伙出現了'
   			}
 		}
   	},
 	{ /* Strange Bird */
-     	title: '一只怪鸟',
+     	title: '一隻怪鳥',
   		isAvailable: function() {
   			return World.getDistance() <= 10 && World.getTerrain() == World.TILE.FIELD;
   		},
   		scenes: {
   			'start': {
   				combat: true,
-  				enemy: '怪鸟',
+  				enemy: '怪鳥',
   				chara: 'B',
   				damage: 3,
   				hit: 0.8,
   				attackDelay: 2,
   				health: 4,
   				loot: {
-  					'鳞片': {
+  					'鱗片': {
   						min: 1,
   						max: 3,
   						chance: 0.8
   					},
-  					'牙齿': {
+  					'牙齒': {
   						min: 1,
   						max: 2,
   						chance: 0.5
@@ -104,13 +104,13 @@ Events.Encounters = [
   						chance: 0.8
   					}
   				},
-  				notification: '一只怪鸟略过平原'
+  				notification: '一隻怪鳥略過平原'
   			}
 		}
   	},
 	/* Tier 2*/
 	{ /* Shivering Man */
-     	title: '一个瑟瑟发抖的人',
+     	title: '一個瑟瑟發抖的人',
   		isAvailable: function() {
   			return World.getDistance() > 10 && World.getDistance() <= 20 && World.getTerrain() == World.TILE.BARRENS;
   		},
@@ -129,7 +129,7 @@ Events.Encounters = [
   						max: 1,
   						chance: 0.2
   					},
-  					'牙齿': {
+  					'牙齒': {
   						min: 1,
   						max: 2,
   						chance: 0.8
@@ -139,18 +139,18 @@ Events.Encounters = [
   						max: 1,
   						chance: 0.2
   					},
-  					'医疗药剂': {
+  					'醫療藥劑': {
   					  min: 1,
   					  max: 3,
   					  chance: 0.7
   					}
   				},
-  				notification: '一个瑟瑟发抖的人接近中, 看上去力量无穷'
+  				notification: '一個瑟瑟發抖的人接近中，看上去力量無窮'
   			}
 		}
   },
 	{ /* Man-eater */
-		title: '一个食人族',
+		title: '一個食人族',
  		isAvailable: function() {
  			return World.getDistance() > 10 && World.getDistance() <= 20 && World.getTerrain() == World.TILE.FOREST;
  		},
@@ -174,18 +174,18 @@ Events.Encounters = [
  						max: 10,
  						chance: 1
  					},
- 					'牙齿': {
+ 					'牙齒': {
  						min: 5,
  						max: 10,
  						chance: 0.8
  					}
  				},
- 				notification: '一只巨大的生物接近了, 爪子上鲜血淋漓'
+ 				notification: '一隻巨大的生物接近了，爪子上鮮血淋漓'
  			}
  		}
 	},
 	{ /* Scavenger */
-     	title: '一个清道夫',
+     	title: '一個清道夫',
   		isAvailable: function() {
   			return World.getDistance() > 10 && World.getDistance() <= 20 && World.getTerrain() == World.TILE.BARRENS;
   		},
@@ -209,23 +209,23 @@ Events.Encounters = [
   						max: 10,
   						chance: 0.8
   					},
-  					'铁': {
+  					'鐵': {
   						min: 1,
   						max: 5,
   						chance: 0.5
   					},
-  					'医疗药剂': {
+  					'醫療藥劑': {
   					  min: 1,
   					  max: 2,
   					  chance: 0.1
   					}
   				},
-  				notification: '一个清道夫快速接近中, 想要偷袭'
+  				notification: '一個清道夫快速接近中，想要偷襲'
   			}
 		}
   	},
 	{ /* Huge Lizard */
-     	title: '一直饥饿的蜥蜴',
+     	title: '一直飢餓的蜥蜴',
   		isAvailable: function() {
   			return World.getDistance() > 10 && World.getDistance() <= 20 && World.getTerrain() == World.TILE.FIELD;
   		},
@@ -239,12 +239,12 @@ Events.Encounters = [
   				attackDelay: 2,
   				health: 20,
   				loot: {
-  					'鳞片': {
+  					'鱗片': {
   						min: 5,
   						max: 10,
   						chance: 0.8
   					},
-  					'牙齿': {
+  					'牙齒': {
   						min: 5,
   						max: 10,
   						chance: 0.5
@@ -255,13 +255,13 @@ Events.Encounters = [
   						chance: 0.8
   					}
   				},
-  				notification: '草丛扑出一只巨大的蜥蜴'
+  				notification: '草叢扑出一隻巨大的蜥蜴'
   			}
 		}
   	},
 	/* Tier 3*/
 	{ /* Feral Terror */
-		title: '一个恐怖生物',
+		title: '一個恐怖生物',
  		isAvailable: function() {
  			return World.getDistance() > 20 && World.getTerrain() == World.TILE.FOREST;
  		},
@@ -285,18 +285,18 @@ Events.Encounters = [
  						max: 10,
  						chance: 1
  					},
- 					'牙齿': {
+ 					'牙齒': {
  						min: 5,
  						max: 10,
  						chance: 0.8
  					}
  				},
- 				notification: '一只野兽, 比想象中更大更狂野'
+ 				notification: '一隻野獸，比想像中更大更狂野'
  			}
  		}
 	},
 	{ /* Soldier */
-     	title: '一个士兵',
+     	title: '一個士兵',
   		isAvailable: function() {
   			return World.getDistance() > 20 && World.getTerrain() == World.TILE.BARRENS;
   		},
@@ -316,35 +316,35 @@ Events.Encounters = [
   						max: 10,
   						chance: 0.8
   					},
-  					'子弹': {
+  					'子彈': {
   						min: 1,
   						max: 5,
   						chance: 0.5
   					},
-  					'步枪': {
+  					'步槍': {
   						min: 1,
   						max: 1,
   						chance: 0.2
   					},
-  					'医疗药剂': {
+  					'醫療藥劑': {
   					  min: 1,
   					  max: 2,
   					  chance: 0.1
   					}
   				},
-  				notification: '一个士兵从沙漠那边开火'
+  				notification: '一個士兵從沙漠那邊開火'
   			}
 		}
   	},
 	{ /* Sniper */
-     	title: '一个狙击手',
+     	title: '一個狙擊手',
   		isAvailable: function() {
   			return World.getDistance() > 20 && World.getTerrain() == World.TILE.FIELD;
   		},
   		scenes: {
   			'start': {
   				combat: true,
-  				enemy: '狙击手',
+  				enemy: '狙擊手',
   				chara: 'S',
   				damage: 15,
   				hit: 0.8,
@@ -357,23 +357,23 @@ Events.Encounters = [
   						max: 10,
   						chance: 0.8
   					},
-  					'子弹': {
+  					'子彈': {
   						min: 1,
   						max: 5,
   						chance: 0.5
   					},
-  					'步枪': {
+  					'步槍': {
   						min: 1,
   						max: 1,
   						chance: 0.2
   					},
-  					'医疗药剂': {
+  					'醫療藥劑': {
   					  min: 1,
   					  max: 2,
   					  chance: 0.1
   					}
   				},
-  				notification: '一声枪响, 远远得传来'
+  				notification: '一聲槍響，遠遠得傳來'
   			}
 		}
   	}

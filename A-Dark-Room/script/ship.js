@@ -24,7 +24,7 @@ var Ship = {
 		}
 		
 		// Create the Ship tab
-		this.tab = Header.addLocation("古老的飞船", "ship", Ship);
+		this.tab = Header.addLocation("古老的飛船", "ship", Ship);
 		
 		// Create the Ship panel
 		this.panel = $('<div>').attr('id', "shipPanel")
@@ -35,7 +35,7 @@ var Ship = {
 		
 		// Draw the hull label
 		var hullRow = $('<div>').attr('id', 'hullRow').appendTo('div#shipPanel');
-		$('<div>').addClass('row_key').text('外壳:').appendTo(hullRow);
+		$('<div>').addClass('row_key').text('外殼:').appendTo(hullRow);
 		$('<div>').addClass('row_val').text($SM.get('game.spaceShip.hull')).appendTo(hullRow);
 		$('<div>').addClass('clear').appendTo(hullRow);
 		
@@ -66,7 +66,7 @@ var Ship = {
 		// Draw the lift off button
 		var b = new Button.Button({
 			id: 'liftoffButton',
-			text: '飞向火星',
+			text: '飛向火星',
 			click: Ship.checkLiftOff,
 			width: '100px',
 			cooldown: Ship.LIFTOFF_COOLDOWN
@@ -88,7 +88,7 @@ var Ship = {
 	onArrival: function(transition_diff) {
 		Ship.setTitle();
 		if(!$SM.get('game.spaceShip.seenShip')) {
-			Notifications.notify(Ship, '在大量机械残骸中, 古老的飞船停在岩石上, 已经等待得太久了.');
+			Notifications.notify(Ship, '在大量機械殘骸中，古老的飛船停在岩石上，已經等待得太久了');
 			$SM.set('game.spaceShip.seenShip', true);
 		}
 
@@ -97,7 +97,7 @@ var Ship = {
 	
 	setTitle: function() {
 		if(Engine.activeModule == this) {
-			document.title = "一艘古老的星际飞船";
+			document.title = "一艘古老的星際飛";
 		}
 	},
 	
@@ -131,15 +131,15 @@ var Ship = {
 	checkLiftOff: function() {
 		if(!$SM.get('game.spaceShip.seenWarning')) {
 			Events.startEvent({
-				title: '真的准备离开了么?',
+				title: '真的準備離開了麼?',
 				scenes: {
 					'start': {
 						text: [
-							"总算要离开这个失落之地了, 永远不回头!"
+							"總算要離開這個失落之地了，永遠不回頭！"
 						],
 						buttons: {
 							'fly': {
-								text: '起飞',
+								text: '起飛',
 								onChoose: function() {
 									$SM.set('game.spaceShip.seenWarning', true);
 									Ship.liftOff();
@@ -147,7 +147,7 @@ var Ship = {
 								nextScene: 'end'
 							},
 							'wait': {
-								text: '再考虑下',
+								text: '再考慮下',
 								onChoose: function() {
 									Button.clearCooldown($('#liftoffButton'));
 								},

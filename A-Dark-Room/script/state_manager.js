@@ -299,11 +299,11 @@ var StateManager = {
 		};
 		if(version == 1.3) {
 			var storesList = [{'from':'木头','to':'木頭'}];
-			for (var word in storesList) {
-				var numFrom = $SM.get('stores["'+word.from+'"]');
+			for (var item in storesList) {
+				var numFrom = $SM.get('stores["'+storesList[item].from+'"]');
 				if (typeof numFrom == 'number') {
-					$SM.add('stores["'+word.to+'"]', numFrom);
-					$SM.remove('stores["'+word.from+'"]');
+					$SM.add('stores["'+storesList[item].to+'"]', numFrom);
+					$SM.remove('stores["'+storesList[item].from+'"]');
 				};
 			};
 		};

@@ -700,7 +700,7 @@ var Room = {
 	},
 	
 	unlockForest: function() {
-		$SM.set('stores["木头"]', 4);
+		$SM.set('stores["木頭"]', 4);
 		Outside.init();
 		Notifications.notify(Room, "外面寒風泘嘯");
 		Notifications.notify(Room, "木頭快燒完了");

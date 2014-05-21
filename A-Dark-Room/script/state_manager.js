@@ -297,6 +297,16 @@ var StateManager = {
 			};
 			$SM.set('version', 1.3);
 		};
+		if(version == 1.3) {
+			var storesList = [{'from':'木头','to':'木頭'}];
+			for (var word in storesList) {
+				var numFrom = $SM.get('stores["'+word.from+'"]');
+				if (typeof numFrom == 'number') {
+					$SM.add('stores["'+word.to+'"]', numFrom);
+					$SM.remove('stores["'+word.from+'"]');
+				};
+			};
+		};
 	},
 	
 	/******************************************************************

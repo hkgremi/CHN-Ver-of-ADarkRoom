@@ -50,7 +50,7 @@ var Room = {
 			cost: function() {
 				var n = $SM.get('game.buildings["木屋"]', true);
 				return {
-					'木屋': 100 + (n*50)
+					'木頭': 100 + (n*50)
 				};
 			}
 		},

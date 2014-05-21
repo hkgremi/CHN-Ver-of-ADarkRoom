@@ -306,6 +306,7 @@ var StateManager = {
 					$SM.remove('stores["'+storesList[item].from+'"]');
 				};
 			};
+			$SM.set('version', 1.3001);
 		};
 	},
 	

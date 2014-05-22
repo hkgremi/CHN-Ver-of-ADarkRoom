@@ -92,7 +92,7 @@ Events.Setpieces = {
 			'start': {
 				text: [
 					'洞穴的入口寬而深',
-					"無法看清內部的清醒."
+					"無法看清內部的清醒"
 				],
 				notification: '這裡的地面到處都是裂痕, 就好像一條條古老的大地傷痕',
 				buttons: {
@@ -158,8 +158,8 @@ Events.Setpieces = {
 			},
 			'a3': {
 				text: [
-			       '一個老舊的營地呈現在你面前',
-			       '灰黑的睡袋被褥都撕裂開了, 布滿了灰塵'
+					'一個老舊的營地呈現在你面前',
+					'灰黑的睡袋被褥都撕裂開了, 布滿了灰塵'
 				],
 				loot: {
 					'醃肉': {
@@ -191,9 +191,9 @@ Events.Setpieces = {
 			},
 			'b1': {
 				text: [
-			       '一個流浪者的尸體躺在一個小穴裡面',
-			       "尸體高度腐爛, 一些肢體已經不見了.",
-			       "鬼知道還剩下些什麼有用東西."
+					'一個流浪者的屍體躺在一個小穴裡面',
+					"屍體高度腐爛, 一些肢體已經不見了",
+					"鬼知道還剩下些甚麼有用東西"
 				],
 				loot: {
 					'鐵劍': {
@@ -212,9 +212,9 @@ Events.Setpieces = {
 						chance: 0.5
 					},
 					'醫療藥劑': {
-					  min: 1,
-					  max: 2,
-					  chance: 0.1
+						min: 1,
+						max: 2,
+						chance: 0.1
 					}
 				},
 				buttons: {
@@ -230,9 +230,9 @@ Events.Setpieces = {
 			},
 			'b2': {
 				text: [
-			       '火炬熄滅在潮濕的空氣中',
-			       '黑暗再度來襲'
-			    ],
+					'火炬熄滅在潮濕的空氣中',
+					'黑暗再度來襲'
+				],
 				notification: '火炬熄滅了',
 				buttons: {
 					'continue': {	
@@ -318,7 +318,7 @@ Events.Setpieces = {
 				hit: 0.8,
 				attackDelay: 2,
 				health: 10,
-				notification: '一頭巨大的野獸沖出黑暗',
+				notification: '一頭巨大的野獸衝出黑暗',
 				loot: {
 					'毛皮': {
 						min: 1,
@@ -376,7 +376,7 @@ Events.Setpieces = {
 			},
 			'end1': {
 				text: [
-			       '一隻大型動物的巢穴就在洞穴的後方'
+					'一隻大型動物的巢穴就在洞穴的後方'
 				],
 				onLoad: function() {
 					World.clearDungeon();
@@ -417,9 +417,9 @@ Events.Setpieces = {
 			},
 			'end2': {
 				text: [
-			       '一個小型供給點隱藏在洞穴後方'
-		        ],
-		        loot: {
+					'一個小型供給點隱藏在洞穴後方'
+				],
+				loot: {
 					'布匹': {
 						min: 5,
 						max: 10,
@@ -451,9 +451,9 @@ Events.Setpieces = {
 						chance: 0.3
 					},
 					'醫療藥劑': {
-					  min: 1,
-					  max: 4,
-					  chance: 0.15
+						min: 1,
+						max: 4,
+						chance: 0.15
 					}
 				},
 				onLoad: function() {
@@ -468,25 +468,25 @@ Events.Setpieces = {
 			},
 			'end3': {
 				text: [
-			       '一個老舊的包裹嵌在石頭後方, 滿布灰塵'
-		        ],
-		        loot: {
-		        	'鋼劍': {
-		        		min: 1,
-		        		max: 1,
-		        		chance: 1
-		        	},
-		        	'鏈球': {
-		        		min: 1,
-		        		max: 3,
-		        		chance: 0.5
-		        	},
-    					'醫療藥劑': {
-    					  min: 1,
-    					  max: 3,
-    					  chance: 0.3
-    					}
-		        },
+					'一個老舊的包裹嵌在石頭後方, 滿布灰塵'
+				],
+				loot: {
+					'鋼劍': {
+						min: 1,
+						max: 1,
+						chance: 1
+					},
+					'鏈球': {
+						min: 1,
+						max: 3,
+						chance: 0.5
+					},
+					'醫療藥劑': {
+						min: 1,
+						max: 3,
+						chance: 0.3
+					}
+				},
 				onLoad: function() {
 					World.clearDungeon();
 				},
@@ -504,8 +504,8 @@ Events.Setpieces = {
 		scenes: {
 			'start': {
 				text: [
-					'一個小型社區坐落在前方, 房子都燒焦殘破了',
-					"路燈都破爛鏽跡斑斑, 這個地方失去光明很舊了."
+					'一個小型社區座落在前方, 房子都燒焦殘破了',
+					"路燈都破爛鏽跡斑斑, 這個地方失去光明很舊了"
 				],
 				notification: "小鎮廢棄在前方, 裡面的居民已經死了很久了",
 				buttons: {
@@ -522,14 +522,14 @@ Events.Setpieces = {
 			
 			'a1': {
 				text: [
-					"學校房屋的玻璃窗都沒有碎掉, 但是都被熏黑了.",
+					"學校房屋的玻璃窗都沒有碎掉, 但是都被熏黑了",
 					'大門吱吱不停的搖曳在殘風中'
 				],
 				buttons: {
 					'enter': {
 						text: '進入',
 						nextScene: {0.5: 'b1', 1: 'b2'},
-						cost: {'火炬': 1}  //tim tag in case of bug
+						cost: {'火炬': 1}	//tim tag in case of bug
 					},
 					'leave': {
 						text: '離開小鎮',
@@ -543,27 +543,27 @@ Events.Setpieces = {
 				enemy: '暴徒',
 				chara: 'T',
 				damage: 4,
-  				hit: 0.8,
-  				attackDelay: 2,
-  				health: 30,
-  				loot: {
-  					'布匹': {
-  						min: 5,
-  						max: 10,
-  						chance: 0.8
-  					},
-  					'皮革': {
-  						min: 5,
-  						max: 10,
-  						chance: 0.8
-  					},
-					'醃肉': {
-						min: 1,
-						max: 5,
-						chance: 0.5
-					}
-  				},
-  				notification: '街頭有埋伏',
+				hit: 0.8,
+				attackDelay: 2,
+				health: 30,
+				loot: {
+					'布匹': {
+						min: 5,
+						max: 10,
+						chance: 0.8
+					},
+					'皮革': {
+						min: 5,
+						max: 10,
+						chance: 0.8
+					},
+				'醃肉': {
+					min: 1,
+					max: 5,
+					chance: 0.5
+				}
+				},
+				notification: '街頭有埋伏',
 				buttons: {
 					'continue': {
 						text: '繼續前進',
@@ -577,8 +577,8 @@ Events.Setpieces = {
 			},
 			'a3': {
 				text: [
-					"前方有一坐建築1物.",
-					'在骯臟的窗子後面有一個綠十字.'
+					"前方有一座建築物",
+					'在骯髒的窗子後面有一個綠十字'
 				],
 				buttons: {
 					'enter': {
@@ -594,31 +594,31 @@ Events.Setpieces = {
 			},
 			'b1': {
 				text: [
-			       '生鏽的鎖櫃裡面有一些供給品.'
-			    ],
-			    loot: {
-			    	'醃肉': {
-			    		min: 1,
-			    		max: 5,
-			    		chance: 1
-			    	},
-			    	'火炬': {
-			    		min: 1,
-			    		max: 3,
-			    		chance: 0.8
-			    	},
-			    	'子彈': {
-			    		min: 1,
-			    		max: 5,
-			    		chance: 0.3
-			    	},
-  					'醫療藥劑': {
-  					  min: 1,
-  					  max: 3,
-  					  chance: 0.05
-  					}
-		    	},
-		    	buttons: {
+					'生鏽的鎖櫃裡面有一些供給品'
+				],
+				loot: {
+					'醃肉': {
+						min: 1,
+						max: 5,
+						chance: 1
+					},
+					'火炬': {
+						min: 1,
+						max: 3,
+						chance: 0.8
+					},
+					'子彈': {
+						min: 1,
+						max: 5,
+						chance: 0.3
+					},
+					'醫療藥劑': {
+						min: 1,
+						max: 3,
+						chance: 0.05
+					}
+				},
+				buttons: {
 					'continue': {
 						text: '繼續前進',
 						nextScene: {0.5: 'c1', 1: 'c2'}
@@ -634,27 +634,27 @@ Events.Setpieces = {
 				enemy: '清道夫',
 				chara: 'S',
 				damage: 4,
-  				hit: 0.8,
-  				attackDelay: 2,
-  				health: 30,
-  				loot: {
-  					'布匹': {
-  						min: 5,
-  						max: 10,
-  						chance: 0.8
-  					},
-  					'皮革': {
-  						min: 5,
-  						max: 10,
-  						chance: 0.8
-  					},
-  					'醃肉': {
-  						min: 1,
-  						max: 5,
-  						chance: 0.5
-  					}
-  				},
-  				notification: '一個清道夫就在門裡面.',
+				hit: 0.8,
+				attackDelay: 2,
+				health: 30,
+				loot: {
+					'布匹': {
+						min: 5,
+						max: 10,
+						chance: 0.8
+					},
+					'皮革': {
+						min: 5,
+						max: 10,
+						chance: 0.8
+					},
+					'醃肉': {
+						min: 1,
+						max: 5,
+						chance: 0.5
+					}
+				},
+				notification: '一個清道夫就在門裡面',
 				buttons: {
 					'continue': {
 						text: '繼續前進',
@@ -671,22 +671,22 @@ Events.Setpieces = {
 				enemy: '野獸',
 				chara: 'B',
 				damage: 3,
-  				hit: 0.8,
-  				attackDelay: 1,
-  				health: 25,
-  				loot: {
-  					'牙齒': {
-  						min: 1,
-  						max: 5,
-  						chance: 1
-  					},
-  					'毛皮': {
-  						min: 5,
-  						max: 10,
-  						chance: 1
-  					}
-  				},
-  				notification: '有一頭野獸坐在雜草叢生的公園內.',
+				hit: 0.8,
+				attackDelay: 1,
+				health: 25,
+				loot: {
+					'牙齒': {
+						min: 1,
+						max: 5,
+						chance: 1
+					},
+					'毛皮': {
+						min: 5,
+						max: 10,
+						chance: 1
+					}
+				},
+				notification: '有一頭野獸坐在雜草叢生的公園內',
 				buttons: {
 					'continue': {
 						text: '繼續前進',
@@ -700,8 +700,8 @@ Events.Setpieces = {
 			},
 			'b4': {
 				text: [
-			       '一個撞翻的大篷車中的物件洒落在整個街道.',
-			       "拾荒者已經掃蕩過一遍了, 但是應該還找得到一些有用的東西."
+					'一個撞翻的大篷車中的物件灑落在整個街道',
+					"拾荒者已經掃蕩過一遍了, 但是應該還找得到一些有用的東西"
 				],
 				loot: {
 					'醃肉': {
@@ -720,9 +720,9 @@ Events.Setpieces = {
 						chance: 0.3
 					},
 					'醫療藥劑': {
-					  min: 1,
-					  max: 3,
-					  chance: 0.1
+						min: 1,
+						max: 3,
+						chance: 0.1
 					}
 				},
 				buttons: {
@@ -741,27 +741,27 @@ Events.Setpieces = {
 				enemy: '瘋徒',
 				chara: 'M',
 				damage: 6,
-  				hit: 0.3,
-  				attackDelay: 1,
-  				health: 10,
-  				loot: {
-  					'布匹': {
-  						min: 2,
-  						max: 4,
-  						chance: 0.3
-  					},
-  					'醃肉': {
-  						min: 1,
-  						max: 5,
-  						chance: 0.9
-  					},
-  					'醫療藥劑': {
-  						min: 1,
-  						max: 2,
-  						chance: 0.4
-  					}
-  				},
-  				notification: '一個瘋子尖叫著攻擊你.',
+				hit: 0.3,
+				attackDelay: 1,
+				health: 10,
+				loot: {
+					'布匹': {
+						min: 2,
+						max: 4,
+						chance: 0.3
+					},
+					'醃肉': {
+						min: 1,
+						max: 5,
+						chance: 0.9
+					},
+					'醫療藥劑': {
+						min: 1,
+						max: 2,
+						chance: 0.4
+					}
+				},
+				notification: '一個瘋子尖叫著攻擊你',
 				buttons: {
 					'continue': {
 						text: '繼續前進',
@@ -778,27 +778,27 @@ Events.Setpieces = {
 				enemy: '暴徒',
 				chara: 'T',
 				damage: 4,
-  				hit: 0.8,
-  				attackDelay: 2,
-  				health: 30,
-  				loot: {
-  					'布匹': {
-  						min: 5,
-  						max: 10,
-  						chance: 0.8
-  					},
-  					'皮革': {
-  						min: 5,
-  						max: 10,
-  						chance: 0.8
-  					},
+				hit: 0.8,
+				attackDelay: 2,
+				health: 30,
+				loot: {
+					'布匹': {
+						min: 5,
+						max: 10,
+						chance: 0.8
+					},
+					'皮革': {
+						min: 5,
+						max: 10,
+						chance: 0.8
+					},
 					'醃肉': {
 						min: 1,
 						max: 5,
 						chance: 0.5
 					}
-  				},
-  				notification: '一個暴徒走出了陰影.',
+				},
+				notification: '一個暴徒走出了陰影',
 				buttons: {
 					'continue': {
 						text: '繼續前進',
@@ -815,22 +815,22 @@ Events.Setpieces = {
 				enemy: '野獸',
 				chara: 'B',
 				damage: 3,
-  				hit: 0.8,
-  				attackDelay: 1,
-  				health: 25,
-  				loot: {
-  					'牙齒': {
-  						min: 1,
-  						max: 5,
-  						chance: 1
-  					},
-  					'毛皮': {
-  						min: 5,
-  						max: 10,
-  						chance: 1
-  					}
-  				},
-  				notification: '一頭野獸沖突了已經空蕩蕩的教室.',
+				hit: 0.8,
+				attackDelay: 1,
+				health: 25,
+				loot: {
+					'牙齒': {
+						min: 1,
+						max: 5,
+						chance: 1
+					},
+					'毛皮': {
+						min: 5,
+						max: 10,
+						chance: 1
+					}
+				},
+				notification: '一頭野獸衝突了已經空蕩蕩的教室',
 				buttons: {
 					'continue': {
 						text: '繼續前進',
@@ -844,12 +844,12 @@ Events.Setpieces = {
 			},
 			'c3': {
 				text: [
-			       '在通過體育館大門的時候, 腳步聲清晰可聞.',
-			       '火炬照亮了走廊.',
-			       '腳步聲停了下來.'
-		        ],
-		        buttons: {
-			        'continue': {
+				'在通過體育館大門的時候, 腳步聲清晰可聞',
+				'火炬照亮了走廊',
+				'腳步聲停了下來'
+			],
+			buttons: {
+				'continue': {
 						text: '進入',
 						nextScene: {1: 'd1'}
 					},
@@ -857,29 +857,29 @@ Events.Setpieces = {
 						text: '離開小鎮',
 						nextScene: 'end'
 					}
-		        }
+			}
 			},
 			'c4': {
 				combat: true,
 				enemy: '野獸',
 				chara: 'B',
 				damage: 4,
-  				hit: 0.8,
-  				attackDelay: 1,
-  				health: 25,
-  				loot: {
-  					'牙齒': {
-  						min: 1,
-  						max: 5,
-  						chance: 1
-  					},
-  					'毛皮': {
-  						min: 5,
-  						max: 10,
-  						chance: 1
-  					}
-  				},
-  				notification: '通過噪聲可以感覺到另外一頭野獸, 在樹林裡面.',
+				hit: 0.8,
+				attackDelay: 1,
+				health: 25,
+				loot: {
+					'牙齒': {
+						min: 1,
+						max: 5,
+						chance: 1
+					},
+					'毛皮': {
+						min: 5,
+						max: 10,
+						chance: 1
+					}
+				},
+				notification: '通過噪聲可以感覺到另外一頭野獸, 在樹林裡面',
 				buttons: {
 					'continue': {
 						text: '繼續前進',
@@ -893,10 +893,10 @@ Events.Setpieces = {
 			},
 			'c5': {
 				text: [
-			       "有什麼事情在下邊的路上引起了騷動.",
-			       "可能是戰斗."
-		        ],
-		        buttons: {
+					"有甚麼事情在下邊的路上引起了騷動",
+					"可能是戰鬥"
+				],
+				buttons: {
 					'continue': {
 						text: '繼續前進',
 						nextScene: {1: 'd2'}
@@ -909,17 +909,17 @@ Events.Setpieces = {
 			},
 			'c6': {
 				text: [
-			       '一個裝滿食物的小籃子隱藏在公園的長椅下, 上面還有個紙條.',
-			       "看不懂寫的什麼."
-		        ],
-		        loot: {
-		        	'醃肉': {
-		        		min: 1,
-		        		max: 5,
-		        		chance: 1
-		        	}
-		        },
-		        buttons: {
+					'一個裝滿食物的小籃子隱藏在公園的長椅下, 上面還有個紙條',
+					"看不懂寫的甚麼"
+				],
+				loot: {
+					'醃肉': {
+						min: 1,
+						max: 5,
+						chance: 1
+					}
+				},
+				buttons: {
 					'continue': {
 						text: '繼續前進',
 						nextScene: {1: 'd2'}
@@ -935,27 +935,27 @@ Events.Setpieces = {
 				enemy: '清道夫',
 				chara: 'S',
 				damage: 5,
-  				hit: 0.8,
-  				attackDelay: 2,
-  				health: 30,
-  				loot: {
-  					'醃肉': {
-  						min: 1,
-  						max: 5,
-  						chance: 1
-  					},
-  					'皮革': {
-  						min: 5,
-  						max: 10,
-  						chance: 0.8
-  					},
+				hit: 0.8,
+				attackDelay: 2,
+				health: 30,
+				loot: {
+					'醃肉': {
+						min: 1,
+						max: 5,
+						chance: 1
+					},
+					'皮革': {
+						min: 5,
+						max: 10,
+						chance: 0.8
+					},
 					'鋼劍': {
 						min: 1,
 						max: 1,
 						chance: 0.5
 					}
-  				},
-  				notification: '一個驚慌的清道夫尖叫著闖過了大門.',
+				},
+				notification: '一個驚慌的清道夫尖叫著闖過了大門',
 				buttons: {
 					'continue': {
 						text: '繼續前進',
@@ -972,27 +972,27 @@ Events.Setpieces = {
 				enemy: '警員',
 				chara: 'V',
 				damage: 6,
-  				hit: 0.8,
-  				attackDelay: 2,
-  				health: 30,
-  				loot: {
-  					'醃肉': {
-  						min: 1,
-  						max: 5,
-  						chance: 1
-  					},
-  					'皮革': {
-  						min: 5,
-  						max: 10,
-  						chance: 0.8
-  					},
-  					'鋼劍': {
-  						min: 1,
-  						max: 1,
-  						chance: 0.5
-  					}
-  				},
-  				notification: "一個男人站在死去的流浪漢邊上, 意識到他不是唯一的人類.",
+				hit: 0.8,
+				attackDelay: 2,
+				health: 30,
+				loot: {
+					'醃肉': {
+						min: 1,
+						max: 5,
+						chance: 1
+					},
+					'皮革': {
+						min: 5,
+						max: 10,
+						chance: 0.8
+					},
+					'鋼劍': {
+						min: 1,
+						max: 1,
+						chance: 0.5
+					}
+				},
+				notification: "一個男人站在死去的流浪漢邊上, 意識到他不是唯一的人類",
 				buttons: {
 					'continue': {
 						text: '繼續前進',
@@ -1006,10 +1006,10 @@ Events.Setpieces = {
 			},
 			'end1': {
 				text: [
-			       '清道夫有一個小營地在學校裡面.',
-			       '收集的各種垃圾散落在地面上, 就好像是從天上下下來的.'
-		        ],
-		        onLoad: function() {
+					'清道夫有一個小營地在學校裡面',
+					'收集的各種垃圾散落在地面上, 就好像是從天上下下來的'
+				],
+				onLoad: function() {
 					World.clearDungeon();
 				},
 				loot: {
@@ -1034,9 +1034,9 @@ Events.Setpieces = {
 						chance: 0.5
 					},
 					'醫療藥劑': {
-					  min: 1,
-					  max: 2,
-					  chance: 0.3
+						min: 1,
+						max: 2,
+						chance: 0.3
 					}
 				},
 				buttons: {
@@ -1048,10 +1048,10 @@ Events.Setpieces = {
 			},
 			'end2': {
 				text: [
-			       "清道夫似乎一直在尋找各種物資.",
-			       "不好意思, 我笑納了."
-		        ],
-		        onLoad: function() {
+					"清道夫似乎一直在尋找各種物資",
+					"不好意思, 我笑納了"
+				],
+				onLoad: function() {
 					World.clearDungeon();
 				},
 				loot: {
@@ -1080,10 +1080,10 @@ Events.Setpieces = {
 			},
 			'end3': {
 				text: [
-			       "流浪漢身體下有一些東西, 手上也抓著很多, 閃閃發光.",
-			       "真值得一殺."
-		        ],
-		        onLoad: function() {
+					"流浪漢身體下有一些東西, 手上也抓著很多, 閃閃發光",
+					"真值得一殺"
+				],
+				onLoad: function() {
 					World.clearDungeon();
 				},
 				loot: {
@@ -1107,11 +1107,11 @@ Events.Setpieces = {
 			},
 			'end4': {
 				text: [
-			       "以牙還牙相當公平.",
-			       "無往而不利.",
-			       "骨頭撿起來之後發現了一些小東西."
-		        ],
-		        onLoad: function() {
+					"以牙還牙相當公平",
+					"無往而不利",
+					"骨頭撿起來之後發現了一些小東西"
+				],
+				onLoad: function() {
 					World.clearDungeon();
 				},
 				loot: {
@@ -1136,9 +1136,9 @@ Events.Setpieces = {
 						chance: 0.5
 					},
 					'醫療藥劑': {
-					  min: 1,
-					  max: 2,
-					  chance: 0.1
+						min: 1,
+						max: 2,
+						chance: 0.1
 					}
 				},
 				buttons: {
@@ -1150,39 +1150,39 @@ Events.Setpieces = {
 			},
 			'end5': {
 				text: [
-			       '抽屜裡面有一些治療藥劑.'
-		        ],
-		    onLoad: function() {
+					'抽屜裡面有一些治療藥劑'
+				],
+				onLoad: function() {
 					World.clearDungeon();
 				},
-        loot: {
-        	'醫療藥劑': {
-        		min: 2,
-        		max: 5,
-        		chance: 1
-        	}
-        },
-        buttons: {
+				loot: {
+					'醫療藥劑': {
+						min: 2,
+						max: 5,
+						chance: 1
+					}
+				},
+				buttons: {
 					'leave': {
 						text: '離開小鎮',
 						nextScene: 'end'
 					}
-		    }
+				}
 			},
 			'end6': {
 				text: [
-			       '診所已經被洗劫一空.',
-			       '隻有污濁的塵土依舊.'
-		        ],
-		    onLoad: function() {
+					'診所已經被洗劫一空',
+					'只有污濁的塵土依舊'
+				],
+				onLoad: function() {
 					World.clearDungeon();
 				},
-        buttons: {
+				buttons: {
 					'leave': {
 						text: '離開小鎮',
 						nextScene: 'end'
 					}
-		    }
+				}
 			}
 		}
 	},
@@ -1191,9 +1191,9 @@ Events.Setpieces = {
 		scenes: {
 			'start': {
 				text: [
-					'一個可憐的高速公路標志坐落在這座曾經的大城市的入口.',
-					"曾經壯觀的高塔就好比是野獸的身體突出部位一般詭異.",
-					'可能有一些有用的東西在裡面.'
+					'一個可憐的高速公路標志座落在這座曾經的大城市的入口',
+					"曾經壯觀的高塔就好比是野獸的身體突出部位一般詭異",
+					'可能有一些有用的東西在裡面'
 				],
 				notification: "一個破損的高塔指向天際",
 				buttons: {
@@ -1209,10 +1209,10 @@ Events.Setpieces = {
 			},
 			'a1': {
 				text:[
-				    '街道都是空的.',
-				    '空氣飄滿了灰塵, 任憑風吹雨打.'
-		        ],
-		        buttons: {
+					'街道都是空的',
+					'空氣飄滿了灰塵, 任憑風吹雨打'
+				],
+				buttons: {
 					'continue': {	
 						text: '繼續前進',
 						nextScene: {0.5: 'b1', 1: 'b2'}
@@ -1225,10 +1225,10 @@ Events.Setpieces = {
 			},
 			'a2': {
 				text:[
-				    '橙色的交通警示標記平方在街道上, 不過都破爛得不行了.',
-				    '燈光閃爍在建築的縫隙中.'
-		        ],
-		        buttons: {
+					'橙色的交通警示標記平方在街道上, 不過都破爛得不行了',
+					'燈光閃爍在建築的縫隙中'
+				],
+				buttons: {
 					'continue': {	
 						text: '繼續前進',
 						nextScene: {0.5: 'b3', 1: 'b4'}
@@ -1241,10 +1241,10 @@ Events.Setpieces = {
 			},
 			'a3': {
 				text: [
-			       '一直巨大的棚屋延綿穿過了街區.',
-			       '一張張灰黑布滿血跡的臉從小破屋裡面伸出來.'
-		        ],
-		        buttons: {
+					'一直巨大的棚屋延綿穿過了街區',
+					'一張張灰黑布滿血跡的臉從小破屋裡面伸出來'
+				],
+				buttons: {
 					'continue': {	
 						text: '繼續前進',
 						nextScene: {0.5: 'b5', 1: 'b6'}
@@ -1257,28 +1257,28 @@ Events.Setpieces = {
 			},
 			'a4': {
 				text: [
-			       '一個廢棄的醫院坐落在前方.'
-		        ],
-        buttons: {
-          'enter': {
-            text: '進入',
-            cost: { '火炬': 1 },
-            nextScene: {0.5: 'b7', 1: 'b8'}
-          },
+					'一個廢棄的醫院座落在前方'
+				],
+				buttons: {
+					'enter': {
+						text: '進入',
+						cost: { '火炬': 1 },
+						nextScene: {0.5: 'b7', 1: 'b8'}
+					},
 					'leave': {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-        }
+				}
 			},
 			'b1': {
 				text: [
-			       '塔的內部似乎保存完整.',
-			       '燒爛的汽車殼子擋住了入口.',
-			       '大多數的落地窗戶被搗毀了.'
-		        ],
-		        buttons: {
-		        	'enter': {	
+					'塔的內部似乎保存完整',
+					'燒爛的汽車殼子擋住了入口',
+					'大多數的落地窗戶被搗毀了'
+				],
+				buttons: {
+					'enter': {	
 						text: '進入',
 						nextScene: {0.5: 'c1', 1: 'c2'}
 					},
@@ -1286,36 +1286,36 @@ Events.Setpieces = {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		        }
+				}
 			},
 			'b2': {
 				combat: true,
-				notification: '一個巨大的蜥蜴打破了老地鐵站的寧靜.',
+				notification: '一個巨大的蜥蜴打破了老地鐵站的寧靜',
 				enemy: '蜥蜴',
 				chara: 'L',
 				damage: 5,
-  				hit: 0.8,
-  				attackDelay: 2,
-  				health: 20,
-  				loot: {
-  					'鱗片': {
-  						min: 5,
-  						max: 10,
-  						chance: 0.8
-  					},
-  					'牙齒': {
-  						min: 5,
-  						max: 10,
-  						chance: 0.5
-  					},
-  					'肉': {
-  						min: 5,
-  						max: 10,
-  						chance: 0.8
-  					}
-  				},
-		        buttons: {
-		        	'descend': {	
+				hit: 0.8,
+				attackDelay: 2,
+				health: 20,
+				loot: {
+					'鱗片': {
+						min: 5,
+						max: 10,
+						chance: 0.8
+					},
+					'牙齒': {
+						min: 5,
+						max: 10,
+						chance: 0.5
+					},
+					'肉': {
+						min: 5,
+						max: 10,
+						chance: 0.8
+					}
+				},
+				buttons: {
+					'descend': {	
 						text: '拜訪',
 						nextScene: {0.5: 'c2', 1: 'c3'}
 					},
@@ -1323,24 +1323,24 @@ Events.Setpieces = {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		        }
+				}
 			},
 			'b3': {
-				notification: '槍響在街道上產生回聲.',
+				notification: '槍響在街道上產生回聲',
 				combat: true,
-  				enemy: '狙擊手',
-  				chara: 'S',
-  				damage: 15,
-  				hit: 0.8,
-  				attackDelay: 4,
-  				health: 30,
+				enemy: '狙擊手',
+				chara: 'S',
+				damage: 15,
+				hit: 0.8,
+				attackDelay: 4,
+				health: 30,
 				ranged: true,
-  				loot: {
-  					'醃肉': {
-  						min: 1,
-  						max: 5,
-  						chance: 0.8
-  					},
+				loot: {
+					'醃肉': {
+						min: 1,
+						max: 5,
+						chance: 0.8
+					},
 					'子彈': {
 						min: 1,
 						max: 5,
@@ -1351,9 +1351,9 @@ Events.Setpieces = {
 						max: 1,
 						chance: 0.2
 					}
-  				},
-		        buttons: {
-		        	'continue': {	
+				},
+				buttons: {
+					'continue': {	
 						text: '繼續前進',
 						nextScene: {0.5: 'c4', 1: 'c5'}
 					},
@@ -1361,24 +1361,24 @@ Events.Setpieces = {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		        }
+				}
 			},
 			'b4': {
-				notification: '士兵在建築之間戰斗, 奔跑和射擊.',
+				notification: '士兵在建築之間戰鬥, 奔跑和射擊',
 				combat: true,
-  				enemy: '士兵',
+				enemy: '士兵',
 				ranged: true,
-  				chara: 'D',
-  				damage: 8,
-  				hit: 0.8,
-  				attackDelay: 2,
-  				health: 50,
-  				loot: {
-  					'醃肉': {
-  						min: 1,
-  						max: 5,
-  						chance: 0.8
-  					},
+				chara: 'D',
+				damage: 8,
+				hit: 0.8,
+				attackDelay: 2,
+				health: 50,
+				loot: {
+					'醃肉': {
+						min: 1,
+						max: 5,
+						chance: 0.8
+					},
 					'子彈': {
 						min: 1,
 						max: 5,
@@ -1389,9 +1389,9 @@ Events.Setpieces = {
 						max: 1,
 						chance: 0.2
 					}
-  				},
-		        buttons: {
-		        	'continue': {	
+				},
+				buttons: {
+					'continue': {	
 						text: '繼續前進',
 						nextScene: {0.5: 'c5', 1: 'c6'}
 					},
@@ -1399,41 +1399,41 @@ Events.Setpieces = {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		        }
+				}
 			},
 			'b5': {
-				notification: '一個看上去挺斯文的人擋住去路並挑舋.',
+				notification: '一個看上去挺斯文的人擋住去路並挑舋',
 				combat: true,
-  				enemy: '斯文禽獸',
-  				chara: 'M',
-  				damage: 1,
-  				hit: 0.8,
-  				attackDelay: 2,
-  				health: 10,
-  				loot: {
-  					'醃肉': {
-  						min: 1,
-  						max: 5,
-  						chance: 0.8
-  					},
-  					'布匹': {
-  						min: 1,
-  						max: 5,
-  						chance: 0.5
-  					},
-  					'皮革': {
-  						min: 1,
-  						max: 1,
-  						chance: 0.2
-  					},
-  					'醫療藥劑': {
-  					  min: 1,
-  					  max: 3,
-  					  chance: 0.05
-  					}
-  				},
-		        buttons: {
-		        	'continue': {	
+				enemy: '斯文禽獸',
+				chara: 'M',
+				damage: 1,
+				hit: 0.8,
+				attackDelay: 2,
+				health: 10,
+				loot: {
+					'醃肉': {
+						min: 1,
+						max: 5,
+						chance: 0.8
+					},
+					'布匹': {
+						min: 1,
+						max: 5,
+						chance: 0.5
+					},
+					'皮革': {
+						min: 1,
+						max: 1,
+						chance: 0.2
+					},
+					'醫療藥劑': {
+						min: 1,
+						max: 3,
+						chance: 0.05
+					}
+				},
+				buttons: {
+					'continue': {	
 						text: '繼續前進',
 						nextScene: {0.5: 'c7', 1: 'c8'}
 					},
@@ -1441,15 +1441,15 @@ Events.Setpieces = {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		        }
+				}
 			},
 			'b6': {
 				text: [
-			       '除了低垂的眼帘.',
-			       '這個人很舊以前就被殺死了.'
-		        ],
-		        buttons: {
-		        	'continue': {	
+					'除了低垂的眼簾',
+					'這個人很舊以前就被殺死了'
+				],
+				buttons: {
+					'continue': {	
 						text: '繼續前進',
 						nextScene: {0.5: 'c8', 1: 'c9'}
 					},
@@ -1457,15 +1457,15 @@ Events.Setpieces = {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		        }
+				}
 			},
 			'b7': {
 				text: [
-			       '空蕩的走廊.',
-			       '清道夫已經把這搜刮乾淨了.'
-		        ],
-		    buttons: {
-		      'continue': {	
+					'空蕩的走廊',
+					'清道夫已經把這搜刮乾淨了'
+				],
+				buttons: {
+					'continue': {	
 						text: '繼續前進',
 						nextScene: {0.3: 'c12', 0.7: 'c10', 1: 'c11'}
 					},
@@ -1473,73 +1473,73 @@ Events.Setpieces = {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		    }
+				}
 			},
 			'b8': {
-				notification: '一個老人揮舞著手術刀沖了過來.',
+				notification: '一個老人揮舞著手術刀衝了過來',
 				combat: true,
 				enemy: '老傢伙',
-  				chara: 'M',
-  				damage: 3,
-  				hit: 0.5,
-  				attackDelay: 2,
-  				health: 10,
-  				loot: {
-  					'醃肉': {
-  						min: 1,
-  						max: 3,
-  						chance: 0.5
-  					},
-  					'布匹': {
-  						min: 1,
-  						max: 5,
-  						chance: 0.8
-  					},
-  					'醫療藥劑': {
-  					  min: 1,
-  					  max: 2,
-  					  chance: 0.5
-  					}
-  				},
-        buttons: {
-        	'continue': {	
-    				text: '繼續前進',
-    				nextScene: {0.3: 'c13', 0.7: 'c11', 1: 'end15'}
-    			},
-    			'leave': {
-    				text: '離開城市',
-    				nextScene: 'end'
-    			}
-		    }
+				chara: 'M',
+				damage: 3,
+				hit: 0.5,
+				attackDelay: 2,
+				health: 10,
+				loot: {
+					'醃肉': {
+						min: 1,
+						max: 3,
+						chance: 0.5
+					},
+					'布匹': {
+						min: 1,
+						max: 5,
+						chance: 0.8
+					},
+					'醫療藥劑': {
+						min: 1,
+						max: 2,
+						chance: 0.5
+					}
+				},
+				buttons: {
+					'continue': {	
+						text: '繼續前進',
+						nextScene: {0.3: 'c13', 0.7: 'c11', 1: 'end15'}
+					},
+					'leave': {
+						text: '離開城市',
+						nextScene: 'end'
+					}
+				}
 			},
 			'c1': {
-				notification: '一個暴徒等在另外一邊牆那.',
+				notification: '一個暴徒等在另外一邊牆那',
 				combat: true,
 				enemy: '暴徒',
-  				chara: 'T',
-  				damage: 3,
-  				hit: 0.8,
-  				attackDelay: 2,
-  				health: 30,
-  				loot: {
-  					'鋼劍': {
-  						min: 1,
-  						max: 1,
-  						chance: 0.5
-  					},
-  					'醃肉': {
-  						min: 1,
-  						max: 3,
-  						chance: 0.5
-  					},
-  					'布匹': {
-  						min: 1,
-  						max: 5,
-  						chance: 0.8
-  					}
-  				},
-		        buttons: {
-		        	'continue': {	
+				chara: 'T',
+				damage: 3,
+				hit: 0.8,
+				attackDelay: 2,
+				health: 30,
+				loot: {
+					'鋼劍': {
+						min: 1,
+						max: 1,
+						chance: 0.5
+					},
+					'醃肉': {
+						min: 1,
+						max: 3,
+						chance: 0.5
+					},
+					'布匹': {
+						min: 1,
+						max: 5,
+						chance: 0.8
+					}
+				},
+				buttons: {
+					'continue': {	
 						text: '繼續前進',
 						nextScene: {0.5: 'd1', 1: 'd2'}
 					},
@@ -1547,37 +1547,37 @@ Events.Setpieces = {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		        }
+				}
 			},
 			
 			'c2': {
-				notification: '一頭咆哮著的野獸從車後面跳出來.',
+				notification: '一頭咆哮著的野獸從車後面跳出來',
 				combat: true,
 				enemy: '野獸',
-  				chara: 'B',
-  				damage: 2,
-  				hit: 0.8,
-  				attackDelay: 1,
-  				health: 30,
-  				loot: {
-  					'肉': {
-  						min: 1,
-  						max: 5,
-  						chance: 0.8
-  					},
-  					'毛皮': {
-  						min: 1,
-  						max: 5,
-  						chance: 0.8
-  					},
-  					'牙齒': {
-  						min: 1,
-  						max: 5,
-  						chance: 0.5
-  					}
-  				},
-		        buttons: {
-		        	'continue': {	
+				chara: 'B',
+				damage: 2,
+				hit: 0.8,
+				attackDelay: 1,
+				health: 30,
+				loot: {
+					'肉': {
+						min: 1,
+						max: 5,
+						chance: 0.8
+					},
+					'毛皮': {
+						min: 1,
+						max: 5,
+						chance: 0.8
+					},
+					'牙齒': {
+						min: 1,
+						max: 5,
+						chance: 0.5
+					}
+				},
+				buttons: {
+					'continue': {	
 						text: '繼續前進',
 						nextScene: {1: 'd2'}
 					},
@@ -1585,17 +1585,17 @@ Events.Setpieces = {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		        }
+				}
 			},
 			
 			'c3': {
 				text: [
-			       '地鐵站上方的街道已經被摧毀了.',
-			       '一些光線照射到陰霾的塵土中.',
-			       '前方傳來一些聲響.'
-		        ],
-		        buttons: {
-		        	'enter': {	
+					'地鐵站上方的街道已經被摧毀了',
+					'一些光線照射到陰霾的塵土中',
+					'前方傳來一些聲響'
+				],
+				buttons: {
+					'enter': {	
 						text: '調查',
 						cost: { '火炬': 1 },
 						nextScene: {0.5: 'd2', 1: 'd3'}
@@ -1604,17 +1604,17 @@ Events.Setpieces = {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		        }
+				}
 			},
 			
 			'c4': {
 				text: [
-			       '好像前方有一個營地.',
-			       '生鏽的鏈條東拉西扯的.',
-			       '大火災庭院前燃燒.'
-		        ],
-		        buttons: {
-		        	'enter': {	
+					'好像前方有一個營地',
+					'生鏽的鏈條東拉西扯的',
+					'大火災庭院前燃燒'
+				],
+				buttons: {
+					'enter': {	
 						text: '繼續前進',
 						nextScene: {0.5: 'd4', 1: 'd5'}
 					},
@@ -1622,16 +1622,16 @@ Events.Setpieces = {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		        }
+				}
 			},
 			
 			'c5': {
 				text: [
-			       '前方傳來更多的聲響.',
-			       '肯定有什麼事情發生了.'
-		        ],
-		        buttons: {
-		        	'enter': {	
+					'前方傳來更多的聲響',
+					'肯定有甚麼事情發生了'
+				],
+				buttons: {
+					'enter': {	
 						text: '繼續前進',
 						nextScene: {1: 'd5'}
 					},
@@ -1639,16 +1639,16 @@ Events.Setpieces = {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		        }
+				}
 			},
 			
 			'c6': {
 				text: [
-			       '風中傳來槍響.',
-			       '前方街道閃光連連.'
-		        ],
-		        buttons: {
-		        	'enter': {	
+					'風中傳來槍響',
+					'前方街道閃光連連'
+				],
+				buttons: {
+					'enter': {	
 						text: '繼續前進',
 						nextScene: {0.5: 'd5', 1: 'd6'}
 					},
@@ -1656,16 +1656,16 @@ Events.Setpieces = {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		        }
+				}
 			},
 			
 			'c7': {
 				text: [
-			       '越來越多的人擠過來了.',
-			       '有人扔出一塊石頭.'
-		        ],
-		        buttons: {
-		        	'enter': {	
+					'越來越多的人擠過來了',
+					'有人扔出一塊石頭'
+				],
+				buttons: {
+					'enter': {	
 						text: '繼續前進',
 						nextScene: {0.5: 'd7', 1: 'd8'}
 					},
@@ -1673,13 +1673,13 @@ Events.Setpieces = {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		        }
+				}
 			},
 			
 			'c8': {
 				text: [
-					'一個簡易車間被安置在路邊.',
-					'店主堅強的站在邊上.'
+					'一個簡易車間被安置在路邊',
+					'店主堅強的站在邊上'
 				],
 				loot: {
 					'鋼劍': {
@@ -1703,13 +1703,13 @@ Events.Setpieces = {
 						chance: 0.01
 					},
 					'醫療藥劑': {
-					  min: 1,
-					  max: 4,
-					  chance: 0.5
+						min: 1,
+						max: 4,
+						chance: 0.5
 					}
 				},
-		        buttons: {
-		        	'enter': {	
+				buttons: {
+					'enter': {	
 						text: '繼續前進',
 						nextScene: {1: 'd8'}
 					},
@@ -1717,39 +1717,39 @@ Events.Setpieces = {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		        }
+				}
 			},
 			
 			'c9': {
 				text: [
-			       '很多肉條晒在路邊.',
-			       '人們紛紛後退, 躲閃著眼光.'
-		        ],
-		        loot: {
-		        	'醃肉': {
-		        		min: 5,
-		        		max: 10,
-		        		chance: 1
-		        	}
-		        },
-		        buttons: {
-		        	'enter': {	
+					'很多肉條曬在路邊',
+					'人們紛紛後退, 躲閃著眼光'
+				],
+				loot: {
+					'醃肉': {
+						min: 5,
+						max: 10,
+						chance: 1
+					}
+				},
+				buttons: {
+					'enter': {	
 						text: '繼續前進',
 						nextScene: {0.5: 'd8', 1: 'd9'}
 					},
 					'leave': {
 						text: '離開城市',
 						nextScene: 'end'
-					}
-		        }
+						}
+			}
 			},
 			
 			'c10': {
 				text: [
-			       '有人反鎖了手術室的門.'
-		        ],
-		    buttons: {
-		      'enter': {	
+					'有人反鎖了手術室的門'
+				],
+				buttons: {
+					'enter': {	
 						text: '繼續前進',
 						nextScene: {0.2: 'end12', 0.6: 'd10', 1: 'd11'}
 					},
@@ -1757,11 +1757,11 @@ Events.Setpieces = {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		    }
+				}
 			},
 			
 			'c11': {
-				notification: '老人們的蝸居就在這間病房.',
+				notification: '老人們的蝸居就在這間病房',
 				combat: true,
 				enemy: '一群難民',
 				plural: true,
@@ -1770,7 +1770,7 @@ Events.Setpieces = {
 				hit: 0.7,
 				attackDelay: 0.5,
 				health: 40,
-  			loot: {
+				loot: {
 					'醃肉': {
 						min: 1,
 						max: 3,
@@ -1782,25 +1782,25 @@ Events.Setpieces = {
 						chance: 0.8
 					},
 					'醫療藥劑': {
-					  min: 1,
-					  max: 3,
-					  chance: 0.3
+						min: 1,
+						max: 3,
+						chance: 0.3
 					}
 				},
-        buttons: {
-    			'continue': {
-    				text: '繼續前進',
-    				nextScene: { 1: 'end10' }
-    			},
-    			'leave': {
+				buttons: {
+					'continue': {
+						text: '繼續前進',
+						nextScene: { 1: 'end10' }
+					},
+					'leave': {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		    }
+				}
 			},
 			
 			'c12': {
-				notification: '一群蜥蜴在角落裡.',
+				notification: '一群蜥蜴在角落裡',
 				combat: true,
 				enemy: '一群蜥蜴',
 				plural: true,
@@ -1809,7 +1809,7 @@ Events.Setpieces = {
 				hit: 0.7,
 				attackDelay: 0.7,
 				health: 30,
-  			loot: {
+				loot: {
 					'肉': {
 						min: 3,
 						max: 8,
@@ -1821,21 +1821,21 @@ Events.Setpieces = {
 						chance: 1
 					},
 					'鱗片': {
-					  min: 3,
-					  max: 5,
-					  chance: 1
+						min: 3,
+						max: 5,
+						chance: 1
 					}
 				},
-        buttons: {
-    			'continue': {
-    				text: '繼續前進',
-    				nextScene: { 1: 'end10' }
-    			},
-    			'leave': {
+				buttons: {
+					'continue': {
+						text: '繼續前進',
+						nextScene: { 1: 'end10' }
+					},
+					'leave': {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		    }
+				}
 			},
 			
 			'c13': {
@@ -1844,41 +1844,41 @@ Events.Setpieces = {
 				],
 				loot: {
 					'醃肉': {
-					  min: 3,
-					  max: 10,
-					  chance: 1
+						min: 3,
+						max: 10,
+						chance: 1
 					}
 				},
-        buttons: {
-    			'continue': {
-    				text: '繼續前進',
-    				nextScene: { 0.5: 'end10', 1: 'end11' }
-    			},
-    			'leave': {
+				buttons: {
+					'continue': {
+						text: '繼續前進',
+						nextScene: { 0.5: 'end10', 1: 'end11' }
+					},
+					'leave': {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		    }
+				}
 			},
 						
 			'd1': {
-				notification: '樓梯盡頭有一個巨大的鳥巢.',
+				notification: '樓梯盡頭有一個巨大的鳥巢',
 				combat: true,
 				enemy: '怪鳥',
-  				chara: 'B',
-  				damage: 5,
-  				hit: 0.7,
-  				attackDelay: 1,
-  				health: 45,
-  				loot: {
-  					'肉': {
-  						min: 5,
-  						max: 10,
-  						chance: 0.8
-  					}
-  				},
-		        buttons: {
-		        	'continue': {	
+				chara: 'B',
+				damage: 5,
+				hit: 0.7,
+				attackDelay: 1,
+				health: 45,
+				loot: {
+					'肉': {
+						min: 5,
+						max: 10,
+						chance: 0.8
+					}
+				},
+				buttons: {
+					'continue': {	
 						text: '繼續前進',
 						nextScene: {0.5: 'end1', 1: 'end2'}
 					},
@@ -1886,38 +1886,38 @@ Events.Setpieces = {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		        }
+				}
 			},
 			
 			'd2': {
 				text: [
-			       "這裡碎片密布.",
-			       "可能在碎片中會有一些有用的東西."
-		        ],
-		        loot: {
-		        	'子彈': {
-		        		min: 1,
-		        		max: 5,
-		        		chance: 0.5
-		        	},
-		        	'鋼': {
-		        		min: 1,
-		        		max: 10,
-		        		chance: 0.8
-		        	},
-		        	'外星合金': {
-		        		min: 1,
-		        		max: 1,
-		        		chance: 0.01
-		        	},
-		        	'布匹': {
-		        		min: 1,
-		        		max: 10,
-		        		chance: 1
-		        	}
-		        },
-		        buttons: {
-		        	'continue': {	
+					"這裡碎片密佈",
+					"可能在碎片中會有一些有用的東西"
+				],
+				loot: {
+					'子彈': {
+						min: 1,
+						max: 5,
+						chance: 0.5
+					},
+					'鋼': {
+						min: 1,
+						max: 10,
+						chance: 0.8
+					},
+					'外星合金': {
+						min: 1,
+						max: 1,
+						chance: 0.01
+					},
+					'布匹': {
+						min: 1,
+						max: 10,
+						chance: 1
+					}
+				},
+				buttons: {
+					'continue': {	
 						text: '繼續前進',
 						nextScene: {1: 'end2'}
 					},
@@ -1925,33 +1925,33 @@ Events.Setpieces = {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		        }
+				}
 			},
 			
 			'd3': {
-				notification: '一大群老鼠沖入隧道.',
+				notification: '一大群老鼠衝入隧道',
 				combat: true,
 				enemy: '一群老鼠',
 				plural: true,
-  				chara: 'RRR',
-  				damage: 1,
-  				hit: 0.8,
-  				attackDelay: 0.25,
-  				health: 60,
-  				loot: {
-  					'毛皮': {
-  						min: 5,
-  						max: 10,
-  						chance: 0.8
-  					},
+				chara: 'RRR',
+				damage: 1,
+				hit: 0.8,
+				attackDelay: 0.25,
+				health: 60,
+				loot: {
+					'毛皮': {
+						min: 5,
+						max: 10,
+						chance: 0.8
+					},
 					'牙齒': {
 						min: 5,
 						max: 10,
 						chance: 0.5
 					}
-  				},
-		        buttons: {
-		        	'continue': {	
+				},
+				buttons: {
+					'continue': {	
 						text: '繼續前進',
 						nextScene: {0.5: 'end2', 1: 'end3'}
 					},
@@ -1959,11 +1959,11 @@ Events.Setpieces = {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		        }
+				}
 			},
 			
 			'd4': {
-				notification: '一個高大的男人揮舞著刺刀進行攻擊.',
+				notification: '一個高大的男人揮舞著刺刀進行攻擊',
 				combat: true,
 				enemy: '老兵',
 				chara: 'V',
@@ -1996,21 +1996,21 @@ Events.Setpieces = {
 			},
 			
 			'd5': {
-				notification: '第二個士兵開火了.',
+				notification: '第二個士兵開火了',
 				combat: true,
-  				enemy: '士兵',
+				enemy: '士兵',
 				ranged: true,
-  				chara: 'D',
-  				damage: 8,
-  				hit: 0.8,
-  				attackDelay: 2,
-  				health: 50,
-  				loot: {
-  					'醃肉': {
-  						min: 1,
-  						max: 5,
-  						chance: 0.8
-  					},
+				chara: 'D',
+				damage: 8,
+				hit: 0.8,
+				attackDelay: 2,
+				health: 50,
+				loot: {
+					'醃肉': {
+						min: 1,
+						max: 5,
+						chance: 0.8
+					},
 					'子彈': {
 						min: 1,
 						max: 5,
@@ -2021,9 +2021,9 @@ Events.Setpieces = {
 						max: 1,
 						chance: 0.2
 					}
-  				},
-		        buttons: {
-		        	'continue': {	
+				},
+				buttons: {
+					'continue': {	
 						text: '繼續前進',
 						nextScene: {1: 'end5'}
 					},
@@ -2031,7 +2031,7 @@ Events.Setpieces = {
 						text: '離開城市',
 						nextScene: 'end'
 					}
-		        }
+				}
 			},
 			
 			'd6': {
@@ -2074,7 +2074,7 @@ Events.Setpieces = {
 			},
 			
 			'd7': {
-				notification: '人群涌動.',
+				notification: '人群湧動',
 				combat: true,
 				enemy: '一群難民',
 				plural: true,
@@ -2108,7 +2108,7 @@ Events.Setpieces = {
 			},
 			
 			'd8': {
-				notification: '小年輕拿了根樹枝就跳出來了.',
+				notification: '小年輕拿了根樹枝就跳出來了',
 				combat: true,
 				enemy: '洗剪吹',
 				chara: 'Y',
@@ -2141,7 +2141,7 @@ Events.Setpieces = {
 			},
 			
 			'd9': {
-				notification: '有個人堅守在小木屋的門口.',
+				notification: '有個人堅守在小木屋的門口',
 				combat: true,
 				enemy: '難民',
 				chara: 'S',
@@ -2174,7 +2174,7 @@ Events.Setpieces = {
 			},
 			
 			'd10': {
-				notification: '在門後的一個畸形人進行攻擊.',
+				notification: '在門後的一個畸形人進行攻擊',
 				combat: true,
 				enemy: '畸形人',
 				chara: 'D',
@@ -2194,14 +2194,14 @@ Events.Setpieces = {
 						chance: 1
 					},
 					'鋼': {
-					  min: 1,
-					  max: 3,
-					  chance: 0.6
+						min: 1,
+						max: 3,
+						chance: 0.6
 					},
 					'鱗片': {
-					  min: 2,
-					  max: 3,
-					  chance: 0.1
+						min: 2,
+						max: 3,
+						chance: 0.1
 					}
 				},
 				buttons: {
@@ -2213,7 +2213,7 @@ Events.Setpieces = {
 			},
 			
 			'd11': {
-				notification: '門隻要開了一點, 幾百個觸手就涌過來.',
+				notification: '門隻要開了一點, 幾百個觸手就湧過來',
 				combat: true,
 				enemy: '滿天觸手',
 				plural: true,
@@ -2239,8 +2239,8 @@ Events.Setpieces = {
 		
 			'end1': {
 				text: [
-				   '鳥兒都喜歡閃亮的東西.',
-				   '它們的巢裡面經常有好東西.'
+					'鳥兒都喜歡閃亮的東西',
+					'它們的巢裡面經常有好東西'
 				],
 				onLoad: function() {
 					World.clearDungeon();
@@ -2273,15 +2273,15 @@ Events.Setpieces = {
 			
 			'end2': {
 				text: [
-				   '沒什麼東西了.',
-				   '清道夫已經來過這裡了.'
+					'沒甚麼東西了',
+					'清道夫已經來過這裡了'
 				],
 				onLoad: function() {
 					World.clearDungeon();
 					$SM.set('game.cityCleared', true);
 				},
 				loot: {
-					'火炬': {   //tim mark, incase of bug
+					'火炬': {	//tim mark, incase of bug
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -2302,9 +2302,9 @@ Events.Setpieces = {
 			
 			'end3': {
 				text: [
-				   '隧道通向一個平台.',
-				   '殘破的牆壁.',
-				   '肢體和供給散落在牆壁兩旁.'
+					'隧道通向一個平台',
+					'殘破的牆壁',
+					'肢體和供給散落在牆壁兩旁'
 				],
 				onLoad: function() {
 					World.clearDungeon();
@@ -2348,9 +2348,9 @@ Events.Setpieces = {
 			
 			'end4': {
 				text: [
-				   '小型軍事哨站補給充分.',
-				   '武器彈藥整理的排列在儲藏室的地上.',
-				   '跟以往一樣的致命.'
+					'小型軍事哨站補給充分',
+					'武器彈藥整理的排列在儲藏室的地上',
+					'跟以往一樣的致命'
 				],
 				onLoad: function() {
 					World.clearDungeon();
@@ -2383,9 +2383,9 @@ Events.Setpieces = {
 			
 			'end5': {
 				text: [
-				   '搜索尸體會得到一些物資.',
-				   '路上會遇到更多的尸體的.',
-				   '該離開了.'
+					'搜索屍體會得到一些物資',
+					'路上會遇到更多的屍體的',
+					'該離開了'
 				],
 				onLoad: function() {
 					World.clearDungeon();
@@ -2408,9 +2408,9 @@ Events.Setpieces = {
 						chance: 0.8
 					},
 					'醫療藥劑': {
-					  min: 1,
-					  max: 4,
-					  chance: 0.1
+						min: 1,
+						max: 4,
+						chance: 0.1
 					}
 				},
 				buttons: {
@@ -2423,9 +2423,9 @@ Events.Setpieces = {
 			
 			'end6': {
 				text: [
-				   '小型定居點已經燒了一陣子了.',
-				   '透過火焰仍可看到在燃燒的尸體.',
-				   "還有時間取得一些物資."
+					'小型定居點已經燒了一陣子了',
+					'透過火焰仍可看到在燃燒的屍體',
+					"還有時間取得一些物資"
 				],
 				onLoad: function() {
 					World.clearDungeon();
@@ -2459,8 +2459,8 @@ Events.Setpieces = {
 			
 			'end7': {
 				text: [
-				   '剩下的居民四處逃逸, 他們的物資都被拋下了.',
-				   "還能找到一些有用的東西, 雖然不多."
+					'剩下的居民四處逃逸, 他們的物資都被拋下了',
+					"還能找到一些有用的東西, 雖然不多"
 				],
 				onLoad: function() {
 					World.clearDungeon();
@@ -2493,9 +2493,9 @@ Events.Setpieces = {
 			
 			'end8': {
 				text: [
-				   '那個年輕的居民背著的是帆布包.',
-				   "裡面有一些旅行用品和幾個裝飾品",
-				   "沒別的了."
+					'那個年輕的居民背著的是帆布包',
+					"裡面有一些旅行用品和幾個裝飾品",
+					"沒別的了"
 				],
 				onLoad: function() {
 					World.clearDungeon();
@@ -2528,9 +2528,9 @@ Events.Setpieces = {
 			
 			'end9': {
 				text: [
-				   '小木屋內, 一個孩子在哭.',
-				   "有幾個行李靠在牆邊.",
-				   "沒有東西了."
+					'小木屋內, 一個孩子在哭',
+					"有幾個行李靠在牆邊",
+					"沒有東西了"
 				],
 				onLoad: function() {
 					World.clearDungeon();
@@ -2568,9 +2568,9 @@ Events.Setpieces = {
 			
 			'end10': {
 				text: [
-				   '腐爛和死亡的氣息彌漫在手術室.',
-				   "有一些東西散落在地上.",
-				   '沒有其他東西了.'
+					'腐爛和死亡的氣息彌漫在手術室',
+					"有一些東西散落在地上",
+					'沒有其他東西了'
 				],
 				onLoad: function() {
 					World.clearDungeon();
@@ -2608,8 +2608,8 @@ Events.Setpieces = {
 			
 			'end11': {
 				text: [
-				   '一個朴素的藥箱在走廊盡頭.',
-				   "醫院裡面已經沒什麼了."
+					'一個樸素的藥箱在走廊盡頭',
+					"醫院裡面已經沒甚麼了"
 				],
 				onLoad: function() {
 					World.clearDungeon();
@@ -2642,7 +2642,7 @@ Events.Setpieces = {
 			
 			'end12': {
 				text: [
-				   '肯定有人一直儲備東西在這裡.'
+					'肯定有人一直儲備東西在這裡'
 				],
 				onLoad: function() {
 					World.clearDungeon();
@@ -2665,19 +2665,19 @@ Events.Setpieces = {
 						chance: 1
 					},
 					'火炬': {
-					  min: 1,
-					  max: 3,
-					  chance: 0.5
+						min: 1,
+						max: 3,
+						chance: 0.5
 					},
 					'手雷': {
-					  min: 1,
-					  max: 1,
-					  chance: 0.5
+						min: 1,
+						max: 1,
+						chance: 0.5
 					},
 					'外星合金': {
-					  min: 1,
-					  max: 2,
-					  chance: 0.8
+						min: 1,
+						max: 2,
+						chance: 0.8
 					}
 				},
 				buttons: {
@@ -2690,8 +2690,8 @@ Events.Setpieces = {
 			
 			'end13': {
 				text: [
-				   '恐怖觸手被幾百了.',
-				   '裡面到處都是遇難者的尸體.'
+					'恐怖觸手被幾百了',
+					'裡面到處都是遇難者的屍體'
 				],
 				onLoad: function() {
 					World.clearDungeon();
@@ -2714,14 +2714,14 @@ Events.Setpieces = {
 						chance: 1
 					},
 					'布匹': {
-					  min: 3,
-					  max: 6,
-					  chance: 0.5
+						min: 3,
+						max: 6,
+						chance: 0.5
 					},
 					'外星合金': {
-					  min: 1,
-					  max: 1,
-					  chance: 0.1
+						min: 1,
+						max: 1,
+						chance: 0.1
 					}
 				},
 				buttons: {
@@ -2734,8 +2734,8 @@ Events.Setpieces = {
 			
 			'end14': {
 				text: [
-				   '扭曲的男人死了.',
-				   '手術室有很多奇怪的設備.'
+					'扭曲的男人死了',
+					'手術室有很多奇怪的設備'
 				],
 				onLoad: function() {
 					World.clearDungeon();
@@ -2753,19 +2753,19 @@ Events.Setpieces = {
 						chance: 1
 					},
 					'布匹': {
-					  min: 1,
-					  max: 3,
-					  chance: 0.5
+						min: 1,
+						max: 3,
+						chance: 0.5
 					},
 					'鋼': {
-					  min: 2,
-					  max: 3,
-					  chance: 0.3
+						min: 2,
+						max: 3,
+						chance: 0.3
 					},
 					'外星合金': {
-					  min: 1,
-					  max: 1,
-					  chance: 0.3
+						min: 1,
+						max: 1,
+						chance: 0.3
 					}
 				},
 				buttons: {
@@ -2778,7 +2778,7 @@ Events.Setpieces = {
 			
 			'end15': {
 				text: [
-					'這個老人有一些有趣的小收藏.'
+					'這個老人有一些有趣的小收藏'
 				],
 				onLoad: function() {
 					World.clearDungeon();
@@ -2791,32 +2791,32 @@ Events.Setpieces = {
 						chance: 0.8
 					},
 					'醫療藥劑': {
-					  min: 1,
-					  max: 4,
-					  chance: 1
+						min: 1,
+						max: 4,
+						chance: 1
 					},
 					'醃肉': {
-					  min: 3,
-					  max: 7,
-					  chance: 1
+						min: 3,
+						max: 7,
+						chance: 1
 					},
 					'鏈球': {
-					  min: 1,
-					  max: 3,
-					  chance: 0.5
+						min: 1,
+						max: 3,
+						chance: 0.5
 					},
 					'毛皮': {
-					  min: 1,
-					  max: 5,
-					  chance: 0.8
+						min: 1,
+						max: 5,
+						chance: 0.8
 					}
 				},
 				buttons: {
-    			'leave': {
-    				text: '離開城市',
-    				nextScene: 'end'
-    			}
-		    }
+				'leave': {
+					text: '離開城市',
+					nextScene: 'end'
+				}
+			}
 			}
 		}	
 	},
@@ -2825,8 +2825,8 @@ Events.Setpieces = {
 		scenes: {
 			'start': {
 				text: [
-					'一所老房子依舊留存著, 白色的外牆泛黃脫落.',
-					'門開著.'
+					'一所老房子依舊留存著, 白色的外牆泛黃脫落',
+					'門開著'
 				],
 				notification: '老房子好比是一座對時代的紀念碑一般',
 				buttons: {
@@ -2842,8 +2842,8 @@ Events.Setpieces = {
 			},
 			'supplies': {
 				text: [
-					'房子雖然被廢棄了, 但是還有一些東西.',
-					'水井裡面依舊有水.'
+					'房子雖然被廢棄了, 但是還有一些東西',
+					'水井裡面依舊有水'
 				],
 				onLoad: function() {
 					World.markVisited(World.curPos[0], World.curPos[1]);
@@ -2876,8 +2876,8 @@ Events.Setpieces = {
 			},
 			'medicine': {
 				text: [
-				  '房子已經被洗劫一空了.',
-					'但是地板下面還有一些醫療用品.'
+					'房子已經被洗劫一空了',
+					'但是地板下面還有一些醫療用品'
 				],
 				onLoad: function() {
 					World.markVisited(World.curPos[0], World.curPos[1]);
@@ -2939,50 +2939,50 @@ Events.Setpieces = {
 		scenes: {
 			'start': {
 				text: [
-			       '很久以前的大戰.',
-			       '雙方的高科技造成了如此壯觀的景象.'
-		        ],
-		        onLoad: function() {
+					'很久以前的大戰',
+					'雙方的高科技造成了如此壯觀的景象'
+				],
+				onLoad: function() {
 					World.markVisited(World.curPos[0], World.curPos[1]);
 				},
-		        loot: {
-		        	'步槍': {
-		        		min: 1,
-		        		max: 3,
-		        		chance: 0.5
-		        	},
-		        	'子彈': {
-		        		min: 5,
-		        		max: 20,
-		        		chance: 0.8
-		        	},
-		        	'鐳射槍': {
-		        		min: 1,
-		        		max: 3,
-		        		chance: 0.3
-		        	},
-		        	'燃料電池': {
-		        		min: 5,
-		        		max: 10,
-		        		chance: 0.5
-		        	},
-		        	'手雷': {
-		        		min: 1,
-		        		max: 5,
-		        		chance: 0.5
-		        	},
-		        	'外星合金': {
-		        		min: 1,
-		        		max: 1,
-		        		chance: 0.3
-		        	}
-		        },
-		        buttons: {
-		        	'leave': {
-		        		text: '離開',
-		        		nextScene: 'end'
-		        	}
-		        }
+				loot: {
+					'步槍': {
+						min: 1,
+						max: 3,
+						chance: 0.5
+					},
+					'子彈': {
+						min: 5,
+						max: 20,
+						chance: 0.8
+					},
+					'鐳射槍': {
+						min: 1,
+						max: 3,
+						chance: 0.3
+					},
+					'燃料電池': {
+						min: 5,
+						max: 10,
+						chance: 0.5
+					},
+					'手雷': {
+						min: 1,
+						max: 5,
+						chance: 0.5
+					},
+					'外星合金': {
+						min: 1,
+						max: 1,
+						chance: 0.3
+					}
+				},
+				buttons: {
+					'leave': {
+						text: '離開',
+						nextScene: 'end'
+					}
+				}
 			}
 		}
 	},
@@ -2991,26 +2991,26 @@ Events.Setpieces = {
 		scenes: {
 			'start': {
 				text: [
-			       '一個巨大的深坑切入地表.',
-			       '他們拿走所需, 拍拍屁股.',
-			       '通過懸崖邊依舊能看清龐大的廢棄場.'
-		        ],
-		        onLoad: function() {
+					'一個巨大的深坑切入地表',
+					'他們拿走所需, 拍拍屁股',
+					'通過懸崖邊依舊能看清龐大的廢棄場'
+				],
+				onLoad: function() {
 					World.markVisited(World.curPos[0], World.curPos[1]);
 				},
-		        loot: {
-		        	'外星合金': {
-		        		min: 1,
-		        		max: 3,
-		        		chance: 1
-		        	}
-		        },
-		        buttons: {
-		        	'leave': {
-		        		text: '離開',
-		        		nextScene: 'end'
-		        	}
-		        }
+				loot: {
+					'外星合金': {
+						min: 1,
+						max: 3,
+						chance: 1
+					}
+				},
+				buttons: {
+					'leave': {
+						text: '離開',
+						nextScene: 'end'
+					}
+				}
 			}
 		}
 	},
@@ -3024,16 +3024,16 @@ Events.Setpieces = {
 					World.state.ship = true;
 				},
 				text: [
-			       '塵土和灰燼之下流露出熟悉的各種曲線. ',
-				   "很幸運當地人不會機械.",
-			       '飛船可以被修復.'
-		        ],
-		        buttons: {
-		        	'leavel': {
-		        		text: '打撈',
-		        		nextScene: 'end'
-		        	}
-		        }
+					'塵土和灰燼之下流露出熟悉的各種曲線. ',
+					"很幸運當地人不會機械",
+					'飛船可以被修復'
+				],
+				buttons: {
+					'leavel': {
+						text: '打撈',
+						nextScene: 'end'
+					}
+				}
 			}
 		}
 	},
@@ -3042,8 +3042,8 @@ Events.Setpieces = {
 		scenes: {
 			'start': {
 				text: [
-					"軍隊已經駐扎在礦井入口了.",
-					'巡邏兵挎著步槍.'
+					"軍隊已經駐扎在礦井入口了",
+					'巡邏兵挎著步槍'
 				],
 				notification: '軍隊已經駐扎在礦井入口了',
 				buttons: {
@@ -3059,19 +3059,19 @@ Events.Setpieces = {
 			},
 			'a1': {
 				combat: true,
-  				enemy: '士兵',
+				enemy: '士兵',
 				ranged: true,
-  				chara: 'D',
-  				damage: 8,
-  				hit: 0.8,
-  				attackDelay: 2,
-  				health: 50,
-  				loot: {
-  					'醃肉': {
-  						min: 1,
-  						max: 5,
-  						chance: 0.8
-  					},
+				chara: 'D',
+				damage: 8,
+				hit: 0.8,
+				attackDelay: 2,
+				health: 50,
+				loot: {
+					'醃肉': {
+						min: 1,
+						max: 5,
+						chance: 0.8
+					},
 					'子彈': {
 						min: 1,
 						max: 5,
@@ -3082,8 +3082,8 @@ Events.Setpieces = {
 						max: 1,
 						chance: 0.2
 					}
-  				},
-  				notification: '一個士兵發現並開火了.',
+				},
+				notification: '一個士兵發現並開火了',
 				buttons: {
 					'continue': {
 						text: '繼續前進',
@@ -3097,19 +3097,19 @@ Events.Setpieces = {
 			},
 			'a2': {
 				combat: true,
-  				enemy: '士兵',
+				enemy: '士兵',
 				ranged: true,
-  				chara: 'D',
-  				damage: 8,
-  				hit: 0.8,
-  				attackDelay: 2,
-  				health: 50,
-  				loot: {
-  					'醃肉': {
-  						min: 1,
-  						max: 5,
-  						chance: 0.8
-  					},
+				chara: 'D',
+				damage: 8,
+				hit: 0.8,
+				attackDelay: 2,
+				health: 50,
+				loot: {
+					'醃肉': {
+						min: 1,
+						max: 5,
+						chance: 0.8
+					},
 					'子彈': {
 						min: 1,
 						max: 5,
@@ -3120,8 +3120,8 @@ Events.Setpieces = {
 						max: 1,
 						chance: 0.2
 					}
-  				},
-  				notification: '第二個士兵加入戰斗.',
+				},
+				notification: '第二個士兵加入戰鬥',
  				buttons: {
 					'continue': {
 						text: '繼續前進',
@@ -3153,7 +3153,7 @@ Events.Setpieces = {
 						chance: 0.8
 					}
 				},
-				notification: '一個頭發花白的士兵加入戰斗, 揮舞著刺刀.',
+				notification: '一個頭發花白的士兵加入戰鬥, 揮舞著刺刀',
  				buttons: {
 					'continue': {
 						text: '繼續前進',
@@ -3163,8 +3163,8 @@ Events.Setpieces = {
 			},
 			'cleared': {
 				text: [
-					'軍隊已經被清除.',
-					'礦坑現在可以工作了.'
+					'軍隊已經被清除',
+					'礦坑現在可以工作了'
 				],
 				notification: '硫磺礦解除危險了',
 				onLoad: function() {
@@ -3186,8 +3186,8 @@ Events.Setpieces = {
 		scenes: {
 			'start': {
 				text: [
-					'礦坑入口篝火很旺.',
-					'有人帶著武器駐守在那.'
+					'礦坑入口篝火很旺',
+					'有人帶著武器駐守在那'
 				],
 				notification: '這座老礦坑沒有被遺棄',
 				buttons: {
@@ -3221,7 +3221,7 @@ Events.Setpieces = {
 						chance: 0.8
 					}
 				},
-				notification: '一個人加入戰斗攻擊',
+				notification: '一個人加入戰鬥攻擊',
 				buttons: {
 					'continue': {
 						text: '繼續前進',
@@ -3253,7 +3253,7 @@ Events.Setpieces = {
 						chance: 0.8
 					}
  				},
- 				notification: '一個人加入戰斗',
+ 				notification: '一個人加入戰鬥',
  				buttons: {
 					'continue': {
 						text: '繼續前進',
@@ -3290,7 +3290,7 @@ Events.Setpieces = {
 						chance: 0.8
 					}
  				},
- 				notification: '隻有老大還在.',
+ 				notification: '只有老大還在',
  				buttons: {
 					'continue': {
 						text: '繼續前進',
@@ -3300,8 +3300,8 @@ Events.Setpieces = {
 			},
 			'cleared': {
 				text: [
-					'營地依舊, 還有火焰燃燒的聲音.',
-					'礦坑安全了.'
+					'營地依舊, 還有火焰燃燒的聲音',
+					'礦坑安全了'
 				],
 				notification: '礦坑解除危險了',
 				onLoad: function() {
@@ -3323,9 +3323,9 @@ Events.Setpieces = {
  		scenes: {
 			'start': {
 				text: [
-					'一個老礦坑在哪, 生鏽的工具被亂丟.',
-					'各種白骨散落一地, 上面還有深深的齒痕.',
-					'黑暗中傳來野性的咆哮.'
+					'一個老礦坑在那, 生鏽的工具被亂丟',
+					'各種白骨散落一地, 上面還有深深的齒痕',
+					'黑暗中傳來野性的咆哮'
 				],
 				notification: '通向礦坑的小路',
 				buttons: {
@@ -3375,8 +3375,8 @@ Events.Setpieces = {
  			},
 			'cleared': {
 				text: [
-					'野獸死了.',
-					'礦坑安全了.'
+					'野獸死了',
+					'礦坑安全了'
 				],
 				notification: '礦坑解除危險了',
 				onLoad: function() {
@@ -3399,10 +3399,10 @@ Events.Setpieces = {
 		scenes: {
 			'start': {
 				text: [
-					'毀滅的村子到處都是灰塵.',
-					'破爛的尸體到處都是.'
+					'毀滅的村子到處都是灰塵',
+					'破爛的屍體到處都是'
 				],
-				notification: '被燒焦的尸體挂在空中.',
+				notification: '被燒焦的屍體掛在空中',
 				buttons: {
 					'enter': {
 						text: '進入',
@@ -3416,8 +3416,8 @@ Events.Setpieces = {
 			},
 			'underground': {
 				text: [
-					'一個木屋處理在村子中心.',
-					'裡面還有一些物資.'
+					'一個木屋處理在村子中心',
+					'裡面還有一些物資'
 				],
 				buttons: {
 					'take': {
@@ -3428,8 +3428,8 @@ Events.Setpieces = {
 			},
 			'exit': {
 				text: [
-					'前代人的痕跡就在這裡了.',
-					'是時候採摘果實了.'
+					'前代人的痕跡就在這裡了',
+					'是時候採摘果實了'
 				],
 				onLoad: function() {
 					World.markVisited(World.curPos[0], World.curPos[1]);

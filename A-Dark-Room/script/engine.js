@@ -64,7 +64,7 @@
 	
 	options: {
 		state: null,
-		debug: localStorage.Debug == "true",
+		debug: false,
 		log: false
 	},
 		

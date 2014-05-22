@@ -868,7 +868,7 @@ var World = {
 	},
 	
 	leaveItAtHome: function(thing) {
-		 return thing != '腌肉' && thing != '子彈' && thing != '燃料電池'  && thing != '護身符' && thing != '醫療藥劑'
+		 return thing != '醃肉' && thing != '子彈' && thing != '燃料電池'  && thing != '護身符' && thing != '醫療藥劑'
 			 && typeof World.Weapons[thing] == 'undefined' && typeof Room.Craftables[thing] == 'undefined';
 	},
 	

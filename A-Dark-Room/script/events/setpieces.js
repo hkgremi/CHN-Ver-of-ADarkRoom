@@ -7,11 +7,11 @@ Events.Setpieces = {
 		scenes: {
 			'start': {
 				text: [
-					'一個庇護所.'
+					'一個庇護所'
 				],
-				notification: '一個野外的庇護所.',
+				notification: '一個野外的庇護所',
 				loot: {
-					'腌肉': {
+					'醃肉': {
 						min: 5,
 						max: 10,
 						chance: 1
@@ -34,10 +34,10 @@ Events.Setpieces = {
 		scenes: {
 			'start': {
 				text: [
-					'腐爛的蘆葦漂浮在沼澤上.',
-					'一個孤單的青蛙靜靜的蹲坐在淤泥上.'
+					'腐爛的蘆葦漂浮在沼澤上',
+					'一個孤單的青蛙靜靜的蹲坐在淤泥上'
 				],
-				notification: '污濁潰爛的氣息彌漫在空氣中.',
+				notification: '污濁潰爛的氣息彌漫在空氣中',
 				buttons: {
 					'enter': {
 						text: '進入',
@@ -51,8 +51,8 @@ Events.Setpieces = {
 			},
 			'cabin': {
 				text: [
-					'沼澤深處有一個覆滿苔蘚的小屋.',
-					'一個年老的流浪漢在裡面, 看似精神恍惚.'
+					'沼澤深處有一個覆滿苔蘚的小屋',
+					'一個年老的流浪漢在裡面, 看似精神恍惚'
 				],
 				buttons: {
 					'talk': {
@@ -68,10 +68,10 @@ Events.Setpieces = {
 			},
 			'talk': {
 				text: [
-					'流浪者點頭拿過了護身符.',
-					'他說有一次帶領著一個大團隊抵達了一個新世界.',
-					'但是未知事物帶來的破壞毀滅了那個團隊, 剩余的人忍飢挨餓痛苦異常.',
-					'現在輪到他了, 流落在這裡深深的懺悔....'
+					'流浪者點頭拿過了護身符',
+					'他說有一次帶領著一個大團隊抵達了一個新世界',
+					'但是未知事物帶來的破壞毀滅了那個團隊, 剩余的人忍飢挨餓痛苦異常',
+					'現在輪到他了, 流落在這裡深深的懺悔...'
 				],
 				onLoad: function() {
 					$SM.addPerk('九陽神功');
@@ -91,7 +91,7 @@ Events.Setpieces = {
 		scenes: {
 			'start': {
 				text: [
-					'洞穴的入口寬而深.',
+					'洞穴的入口寬而深',
 					"無法看清內部的清醒."
 				],
 				notification: '這裡的地面到處都是裂痕, 就好像一條條古老的大地傷痕',
@@ -142,7 +142,7 @@ Events.Setpieces = {
 			},
 			'a2': {
 				text: [
-					'洞穴已經小的沒有落腳之地了.',
+					'洞穴已經小的沒有落腳之地了',
 					"牆壁很潮濕並覆滿了苔蘚"
 				],
 				buttons: {
@@ -158,11 +158,11 @@ Events.Setpieces = {
 			},
 			'a3': {
 				text: [
-			       '一個老舊的營地呈現在你面前.',
-			       '灰黑的睡袋被褥都撕裂開了, 布滿了灰塵.'
+			       '一個老舊的營地呈現在你面前',
+			       '灰黑的睡袋被褥都撕裂開了, 布滿了灰塵'
 				],
 				loot: {
-					'腌肉': {
+					'醃肉': {
 						min: 1,
 						max: 5,
 						chance: 1
@@ -191,7 +191,7 @@ Events.Setpieces = {
 			},
 			'b1': {
 				text: [
-			       '一個流浪者的尸體躺在一個小穴裡面.',
+			       '一個流浪者的尸體躺在一個小穴裡面',
 			       "尸體高度腐爛, 一些肢體已經不見了.",
 			       "鬼知道還剩下些什麼有用東西."
 				],
@@ -201,7 +201,7 @@ Events.Setpieces = {
 						max: 1,
 						chance: 1
 					},
-					'腌肉': {
+					'醃肉': {
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -376,7 +376,7 @@ Events.Setpieces = {
 			},
 			'end1': {
 				text: [
-			       '一隻大型動物的巢穴就在洞穴的后方.'
+			       '一隻大型動物的巢穴就在洞穴的後方'
 				],
 				onLoad: function() {
 					World.clearDungeon();
@@ -417,7 +417,7 @@ Events.Setpieces = {
 			},
 			'end2': {
 				text: [
-			       '一個小型供給點隱藏在洞穴后方.'
+			       '一個小型供給點隱藏在洞穴後方'
 		        ],
 		        loot: {
 					'布匹': {
@@ -435,7 +435,7 @@ Events.Setpieces = {
 						max: 10,
 						chance: 1
 					},
-					'腌肉': {
+					'醃肉': {
 						min: 5,
 						max: 10,
 						chance: 1
@@ -468,7 +468,7 @@ Events.Setpieces = {
 			},
 			'end3': {
 				text: [
-			       '一個老舊的包裹嵌在石頭后方, 滿布灰塵.'
+			       '一個老舊的包裹嵌在石頭後方, 滿布灰塵'
 		        ],
 		        loot: {
 		        	'鋼劍': {
@@ -504,7 +504,7 @@ Events.Setpieces = {
 		scenes: {
 			'start': {
 				text: [
-					'一個小型社區坐落在前方, 房子都燒焦殘破了.',
+					'一個小型社區坐落在前方, 房子都燒焦殘破了',
 					"路燈都破爛鏽跡斑斑, 這個地方失去光明很舊了."
 				],
 				notification: "小鎮廢棄在前方, 裡面的居民已經死了很久了",
@@ -523,7 +523,7 @@ Events.Setpieces = {
 			'a1': {
 				text: [
 					"學校房屋的玻璃窗都沒有碎掉, 但是都被熏黑了.",
-					'大門吱吱不停的搖曳在殘風中.'
+					'大門吱吱不停的搖曳在殘風中'
 				],
 				buttons: {
 					'enter': {
@@ -557,13 +557,13 @@ Events.Setpieces = {
   						max: 10,
   						chance: 0.8
   					},
-					'腌肉': {
+					'醃肉': {
 						min: 1,
 						max: 5,
 						chance: 0.5
 					}
   				},
-  				notification: '街頭有埋伏.',
+  				notification: '街頭有埋伏',
 				buttons: {
 					'continue': {
 						text: '繼續前進',
@@ -577,8 +577,8 @@ Events.Setpieces = {
 			},
 			'a3': {
 				text: [
-					"前方有一坐建筑物.",
-					'在骯臟的窗子后面有一個綠十字.'
+					"前方有一坐建築1物.",
+					'在骯臟的窗子後面有一個綠十字.'
 				],
 				buttons: {
 					'enter': {
@@ -597,7 +597,7 @@ Events.Setpieces = {
 			       '生鏽的鎖櫃裡面有一些供給品.'
 			    ],
 			    loot: {
-			    	'腌肉': {
+			    	'醃肉': {
 			    		min: 1,
 			    		max: 5,
 			    		chance: 1
@@ -648,7 +648,7 @@ Events.Setpieces = {
   						max: 10,
   						chance: 0.8
   					},
-  					'腌肉': {
+  					'醃肉': {
   						min: 1,
   						max: 5,
   						chance: 0.5
@@ -704,7 +704,7 @@ Events.Setpieces = {
 			       "拾荒者已經掃蕩過一遍了, 但是應該還找得到一些有用的東西."
 				],
 				loot: {
-					'腌肉': {
+					'醃肉': {
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -750,7 +750,7 @@ Events.Setpieces = {
   						max: 4,
   						chance: 0.3
   					},
-  					'腌肉': {
+  					'醃肉': {
   						min: 1,
   						max: 5,
   						chance: 0.9
@@ -792,7 +792,7 @@ Events.Setpieces = {
   						max: 10,
   						chance: 0.8
   					},
-					'腌肉': {
+					'醃肉': {
 						min: 1,
 						max: 5,
 						chance: 0.5
@@ -913,7 +913,7 @@ Events.Setpieces = {
 			       "看不懂寫的什麼."
 		        ],
 		        loot: {
-		        	'腌肉': {
+		        	'醃肉': {
 		        		min: 1,
 		        		max: 5,
 		        		chance: 1
@@ -939,7 +939,7 @@ Events.Setpieces = {
   				attackDelay: 2,
   				health: 30,
   				loot: {
-  					'腌肉': {
+  					'醃肉': {
   						min: 1,
   						max: 5,
   						chance: 1
@@ -976,7 +976,7 @@ Events.Setpieces = {
   				attackDelay: 2,
   				health: 30,
   				loot: {
-  					'腌肉': {
+  					'醃肉': {
   						min: 1,
   						max: 5,
   						chance: 1
@@ -1023,7 +1023,7 @@ Events.Setpieces = {
 						max: 10,
 						chance: 1
 					},
-					'腌肉': {
+					'醃肉': {
 						min: 5,
 						max: 10,
 						chance: 1
@@ -1060,7 +1060,7 @@ Events.Setpieces = {
 						max: 10,
 						chance: 1
 					},
-					'腌肉': {
+					'醃肉': {
 						min: 5,
 						max: 10,
 						chance: 1
@@ -1109,13 +1109,13 @@ Events.Setpieces = {
 				text: [
 			       "以牙還牙相當公平.",
 			       "無往而不利.",
-			       "骨頭撿起來之后發現了一些小東西."
+			       "骨頭撿起來之後發現了一些小東西."
 		        ],
 		        onLoad: function() {
 					World.clearDungeon();
 				},
 				loot: {
-					'腌肉': {
+					'醃肉': {
 						min: 5,
 						max: 10,
 						chance: 1
@@ -1226,7 +1226,7 @@ Events.Setpieces = {
 			'a2': {
 				text:[
 				    '橙色的交通警示標記平方在街道上, 不過都破爛得不行了.',
-				    '燈光閃爍在建筑的縫隙中.'
+				    '燈光閃爍在建築的縫隙中.'
 		        ],
 		        buttons: {
 					'continue': {	
@@ -1336,7 +1336,7 @@ Events.Setpieces = {
   				health: 30,
 				ranged: true,
   				loot: {
-  					'腌肉': {
+  					'醃肉': {
   						min: 1,
   						max: 5,
   						chance: 0.8
@@ -1364,7 +1364,7 @@ Events.Setpieces = {
 		        }
 			},
 			'b4': {
-				notification: '士兵在建筑之間戰斗, 奔跑和射擊.',
+				notification: '士兵在建築之間戰斗, 奔跑和射擊.',
 				combat: true,
   				enemy: '士兵',
 				ranged: true,
@@ -1374,7 +1374,7 @@ Events.Setpieces = {
   				attackDelay: 2,
   				health: 50,
   				loot: {
-  					'腌肉': {
+  					'醃肉': {
   						min: 1,
   						max: 5,
   						chance: 0.8
@@ -1411,7 +1411,7 @@ Events.Setpieces = {
   				attackDelay: 2,
   				health: 10,
   				loot: {
-  					'腌肉': {
+  					'醃肉': {
   						min: 1,
   						max: 5,
   						chance: 0.8
@@ -1462,7 +1462,7 @@ Events.Setpieces = {
 			'b7': {
 				text: [
 			       '空蕩的走廊.',
-			       '清道夫已經把這搜刮干淨了.'
+			       '清道夫已經把這搜刮乾淨了.'
 		        ],
 		    buttons: {
 		      'continue': {	
@@ -1478,14 +1478,14 @@ Events.Setpieces = {
 			'b8': {
 				notification: '一個老人揮舞著手術刀沖了過來.',
 				combat: true,
-				enemy: '老家伙',
+				enemy: '老傢伙',
   				chara: 'M',
   				damage: 3,
   				hit: 0.5,
   				attackDelay: 2,
   				health: 10,
   				loot: {
-  					'腌肉': {
+  					'醃肉': {
   						min: 1,
   						max: 3,
   						chance: 0.5
@@ -1527,7 +1527,7 @@ Events.Setpieces = {
   						max: 1,
   						chance: 0.5
   					},
-  					'腌肉': {
+  					'醃肉': {
   						min: 1,
   						max: 3,
   						chance: 0.5
@@ -1551,7 +1551,7 @@ Events.Setpieces = {
 			},
 			
 			'c2': {
-				notification: '一頭咆哮著的野獸從車后面跳出來.',
+				notification: '一頭咆哮著的野獸從車後面跳出來.',
 				combat: true,
 				enemy: '野獸',
   				chara: 'B',
@@ -1723,10 +1723,10 @@ Events.Setpieces = {
 			'c9': {
 				text: [
 			       '很多肉條晒在路邊.',
-			       '人們紛紛后退, 躲閃著眼光.'
+			       '人們紛紛後退, 躲閃著眼光.'
 		        ],
 		        loot: {
-		        	'腌肉': {
+		        	'醃肉': {
 		        		min: 5,
 		        		max: 10,
 		        		chance: 1
@@ -1771,7 +1771,7 @@ Events.Setpieces = {
 				attackDelay: 0.5,
 				health: 40,
   			loot: {
-					'腌肉': {
+					'醃肉': {
 						min: 1,
 						max: 3,
 						chance: 0.5
@@ -1840,10 +1840,10 @@ Events.Setpieces = {
 			
 			'c13': {
 				text: [
-					'肉條挂在房間裡面風干.'
+					'肉條掛在房間裡面風乾'
 				],
 				loot: {
-					'腌肉': {
+					'醃肉': {
 					  min: 3,
 					  max: 10,
 					  chance: 1
@@ -1977,7 +1977,7 @@ Events.Setpieces = {
 						max: 1,
 						chance: 0.5
 					},
-					'腌肉': {
+					'醃肉': {
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -2006,7 +2006,7 @@ Events.Setpieces = {
   				attackDelay: 2,
   				health: 50,
   				loot: {
-  					'腌肉': {
+  					'醃肉': {
   						min: 1,
   						max: 5,
   						chance: 0.8
@@ -2055,7 +2055,7 @@ Events.Setpieces = {
 						max: 5,
 						chance: 0.8
 					},
-					'腌肉': {
+					'醃肉': {
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -2174,7 +2174,7 @@ Events.Setpieces = {
 			},
 			
 			'd10': {
-				notification: '在門后的一個畸形人進行攻擊.',
+				notification: '在門後的一個畸形人進行攻擊.',
 				combat: true,
 				enemy: '畸形人',
 				chara: 'D',
@@ -2286,7 +2286,7 @@ Events.Setpieces = {
 						max: 5,
 						chance: 0.8
 					},
-					'腌肉': {
+					'醃肉': {
 						min: 1,
 						max: 5,
 						chance: 0.5
@@ -2402,7 +2402,7 @@ Events.Setpieces = {
 						max: 10,
 						chance: 1
 					},
-					'腌肉': {
+					'醃肉': {
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -2442,7 +2442,7 @@ Events.Setpieces = {
 						max: 5,
 						chance: 0.5
 					},
-					'腌肉': {
+					'醃肉': {
 						min: 1,
 						max: 10,
 						chance: 1
@@ -2477,7 +2477,7 @@ Events.Setpieces = {
 						max: 5,
 						chance: 0.5
 					},
-					'腌肉': {
+					'醃肉': {
 						min: 1,
 						max: 10,
 						chance: 1
@@ -2512,7 +2512,7 @@ Events.Setpieces = {
 						max: 5,
 						chance: 0.5
 					},
-					'腌肉': {
+					'醃肉': {
 						min: 1,
 						max: 10,
 						chance: 1
@@ -2795,7 +2795,7 @@ Events.Setpieces = {
 					  max: 4,
 					  chance: 1
 					},
-					'腌肉': {
+					'醃肉': {
 					  min: 3,
 					  max: 7,
 					  chance: 1
@@ -2851,7 +2851,7 @@ Events.Setpieces = {
 					Notifications.notify(null, '水滿了');
 				},
 				loot: {
- 					'腌肉': {
+ 					'醃肉': {
  						min: 1,
  						max: 10,
  						chance: 0.8
@@ -2909,7 +2909,7 @@ Events.Setpieces = {
 					World.markVisited(World.curPos[0], World.curPos[1]);
 				},
 				loot: {
- 					'腌肉': {
+ 					'醃肉': {
  						min: 1,
  						max: 10,
  						chance: 0.8
@@ -3067,7 +3067,7 @@ Events.Setpieces = {
   				attackDelay: 2,
   				health: 50,
   				loot: {
-  					'腌肉': {
+  					'醃肉': {
   						min: 1,
   						max: 5,
   						chance: 0.8
@@ -3105,7 +3105,7 @@ Events.Setpieces = {
   				attackDelay: 2,
   				health: 50,
   				loot: {
-  					'腌肉': {
+  					'醃肉': {
   						min: 1,
   						max: 5,
   						chance: 0.8
@@ -3147,7 +3147,7 @@ Events.Setpieces = {
 						max: 1,
 						chance: 0.5
 					},
-					'腌肉': {
+					'醃肉': {
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -3210,7 +3210,7 @@ Events.Setpieces = {
 				attackDelay: 2,
 				health: 10,
 				loot: {
-					'腌肉': {
+					'醃肉': {
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -3242,7 +3242,7 @@ Events.Setpieces = {
  				attackDelay: 2,
  				health: 10,
  				loot: {
-					'腌肉': {
+					'醃肉': {
 						min: 1,
  						max: 5,
 						chance: 0.8
@@ -3274,7 +3274,7 @@ Events.Setpieces = {
  				attackDelay: 2,
  				health: 20,
  				loot: {
-					'腌肉': {
+					'醃肉': {
 						min: 5,
  						max: 10,
 						chance: 1

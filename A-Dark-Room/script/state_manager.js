@@ -298,7 +298,7 @@ var StateManager = {
 			$SM.set('version', 1.3);
 		};
 		if(version == 1.3) {
-			var storesList = [{'from':'木头','to':'木頭'}];
+			var storesList = [{'from':'木头','to':'木頭'}, {'from':'腌肉','to':'醃肉'}];
 			for (var item in storesList) {
 				var numFrom = $SM.get('stores["'+storesList[item].from+'"]');
 				if (typeof numFrom == 'number') {

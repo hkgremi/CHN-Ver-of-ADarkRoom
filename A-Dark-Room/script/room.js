@@ -102,7 +102,7 @@ var Room = {
 			type: 'building',
 			cost: function() {
 				return {
-						'木頭': 600,
+					'木頭': 600,
 					'肉': 50  
 				};
 			}
@@ -130,7 +130,7 @@ var Room = {
 			cost: function() {
 				return {
 					'木頭': 1500,
-					'鐵铁': 100,
+					'鐵': 100,
 					'煤': 100
 				};
 			}
